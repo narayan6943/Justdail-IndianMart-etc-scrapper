@@ -1,0 +1,66 @@
+# Selectors for specialized platforms
+# Note: these platforms frequently change their DOM. 
+# You may need to inspect the live site and update these keys.
+
+platforms:
+  justdial:
+    url_pattern: "https://www.justdial.com/{location}/{query}"
+    listing_container: ".resultbox, .cntanr"  # Tries to match either
+    next_button: "a[rel='next']"
+    fields:
+      business_name:
+        selector: ".resultbox_title_anchor, .store-name"
+        type: "text"
+      phone:
+        selector: ".contact-info, .mobilesv, .callcontent"
+        type: "text"
+      address:
+        selector: ".address-info, .cont_fl_addr"
+        type: "text"
+      rating:
+        selector: ".resultbox_totalrate, .green-box"
+        type: "text"
+      reviews:
+        selector: ".resultbox_countrate, .total-review"
+        type: "text"
+      website:
+        selector: ".web_ic, a[target='_blank']" # Generic fallback
+        type: "attribute"
+        attribute: "href"
+
+  indiamart:
+    url_pattern: "https://dir.indiamart.com/search.mp?ss={query}&city={location}"
+    listing_container: ".lst_cl, .m-p-l"
+    next_button: "a.next"
+    fields:
+      business_name:
+        selector: ".company-name, .lg"
+        type: "text"
+      phone:
+        selector: ".pns_h, .du-call" # Often requires clicking "View Number" or "Call Now"
+        type: "text"
+      address:
+        selector: ".address, .clg"
+        type: "text"
+      rating:
+        selector: ".rating" # Less common on IM listings page
+        type: "text"
+      website:
+        selector: "a.website-link"
+        type: "attribute"
+        attribute: "href"
+
+# Fallback/Generic (if user chooses 'custom')
+generic:
+  listing_container: ".business-listing"
+  next_button: ".pagination-next"
+  fields:
+    business_name: 
+      selector: ".business-name"
+      type: "text"
+    phone:
+      selector: ".phone-number"
+      type: "text"
+    address:
+      selector: ".address"
+      type: "text"

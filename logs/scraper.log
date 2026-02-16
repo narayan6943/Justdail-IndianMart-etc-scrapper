@@ -1,0 +1,871 @@
+2026-02-15 18:22:35,033 - INFO - Navigating to file:///C:/Users/Nayan/OneDrive/Documents/scrapper/tests/mock_page_1.html
+2026-02-15 18:22:35,140 - INFO - Scraping page 1
+2026-02-15 18:22:37,680 - INFO - Found 2 items on page 1
+2026-02-15 18:22:37,697 - WARNING - Validation error for data Tech Solutions Inc.: 1 validation error for BusinessLead
+reviews
+  Input should be a valid integer, unable to parse string as an integer [type=int_parsing, input_value='120 reviews', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.12/v/int_parsing
+2026-02-15 18:22:37,697 - WARNING - Validation error for data Bloom Flowers: 1 validation error for BusinessLead
+reviews
+  Input should be a valid integer, unable to parse string as an integer [type=int_parsing, input_value='50 reviews', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.12/v/int_parsing
+2026-02-15 18:22:40,664 - INFO - Scraping page 2
+2026-02-15 18:22:42,990 - INFO - Found 1 items on page 2
+2026-02-15 18:22:42,992 - WARNING - Validation error for data NextGen Motors: 1 validation error for BusinessLead
+reviews
+  Input should be a valid integer, unable to parse string as an integer [type=int_parsing, input_value='20 reviews', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.12/v/int_parsing
+2026-02-15 18:22:42,994 - WARNING - No data to save.
+2026-02-15 19:26:08,132 - INFO - Navigating to file:///C:/Users/Nayan/OneDrive/Documents/scrapper/tests/mock_page_1.html
+2026-02-15 19:26:08,197 - INFO - Scraping page 1
+2026-02-15 19:26:10,286 - INFO - Found 2 items on page 1
+2026-02-15 19:26:14,525 - INFO - Scraping page 2
+2026-02-15 19:26:16,577 - INFO - Found 1 items on page 2
+2026-02-15 19:26:16,612 - INFO - Saved 3 records to C:\Users\Nayan\OneDrive\Documents\scrapper\tests\output\test_results.csv
+2026-02-15 19:30:07,145 - INFO - Starting Web Scraper...
+2026-02-15 19:30:08,938 - INFO - Navigating to https://example.com/directory
+2026-02-15 19:30:10,282 - INFO - Starting Web Scraper...
+2026-02-15 19:30:11,548 - INFO - Navigating to https://example.com/directory
+2026-02-15 19:30:12,446 - INFO - Scraping page 1
+2026-02-15 19:30:12,448 - INFO - Scraping page 1
+2026-02-15 19:30:14,717 - INFO - Found 0 items on page 1
+2026-02-15 19:30:14,731 - INFO - Found 0 items on page 1
+2026-02-15 19:30:14,772 - INFO - No next page found or max pages reached.
+2026-02-15 19:30:14,772 - WARNING - No data to save.
+2026-02-15 19:30:14,772 - INFO - No next page found or max pages reached.
+2026-02-15 19:30:14,773 - WARNING - No data to save.
+2026-02-15 19:30:14,988 - INFO - Scraping completed successfully.
+2026-02-15 19:30:15,004 - INFO - Scraping completed successfully.
+2026-02-15 19:30:19,940 - INFO - Starting Web Scraper...
+2026-02-15 19:30:21,218 - INFO - Navigating to https://example.com/directory
+2026-02-15 19:30:21,788 - INFO - Scraping page 1
+2026-02-15 19:30:23,853 - INFO - Found 0 items on page 1
+2026-02-15 19:30:23,883 - INFO - No next page found or max pages reached.
+2026-02-15 19:30:23,884 - WARNING - No data to save.
+2026-02-15 19:30:24,020 - INFO - Scraping completed successfully.
+2026-02-15 19:47:04,110 - INFO - Starting Web Scraper for justdial...
+2026-02-15 19:47:05,211 - INFO - Navigating to https://www.justdial.com/pune/real state agents (Platform: justdial)
+2026-02-15 19:47:08,050 - ERROR - Scraping failed: Page.goto: net::ERR_HTTP2_PROTOCOL_ERROR at https://www.justdial.com/pune/real%20state%20agents
+Call log:
+  - navigating to "https://www.justdial.com/pune/real%20state%20agents", waiting until "domcontentloaded"
+
+2026-02-15 19:47:08,050 - WARNING - No data to save.
+2026-02-15 19:47:08,183 - INFO - Scraping completed successfully.
+2026-02-15 19:49:14,776 - INFO - Starting Web Scraper for justdial...
+2026-02-15 19:49:15,948 - INFO - Navigating to https://www.justdial.com/Pune/real+State+agents (Platform: justdial)
+2026-02-15 19:49:35,209 - ERROR - Scraping failed: Page.goto: net::ERR_CONNECTION_RESET at https://www.justdial.com/Pune/real+State+agents
+Call log:
+  - navigating to "https://www.justdial.com/Pune/real+State+agents", waiting until "domcontentloaded"
+
+2026-02-15 19:49:35,210 - WARNING - No data to save.
+2026-02-15 19:49:35,334 - INFO - Scraping completed successfully.
+2026-02-15 19:54:40,028 - INFO - Starting Web Scraper for justdial...
+2026-02-15 19:54:43,094 - INFO - Navigating to https://www.justdial.com/Pune/real+state+agent (Platform: justdial)
+2026-02-15 19:54:51,534 - INFO - Scraping page 1
+2026-02-15 19:54:51,673 - INFO - Auto-scrolling...
+2026-02-15 19:54:57,023 - INFO - Found 20 items on page 1
+2026-02-15 19:54:57,356 - INFO - No next page found or max pages reached.
+2026-02-15 19:54:57,453 - INFO - Saved 20 records to C:\Users\Nayan\OneDrive\Documents\scrapper\output\leads_data.csv
+2026-02-15 19:54:58,684 - INFO - Scraping completed successfully.
+2026-02-15 20:34:20,819 - INFO - Starting Web Scraper for justdial...
+2026-02-15 20:34:23,402 - INFO - Navigating to https://www.justdial.com/agra/Plumber (Platform: justdial)
+2026-02-15 20:34:28,795 - ERROR - Scraping failed: cannot access local variable 'current_page' where it is not associated with a value
+2026-02-15 20:34:28,798 - WARNING - No data to save.
+2026-02-15 20:34:29,578 - INFO - Scraping completed successfully.
+2026-02-15 20:52:17,017 - INFO - Starting Web Scraper for justdial...
+2026-02-15 20:52:18,804 - INFO - Navigating to https://www.justdial.com/pune/Plumber (Platform: justdial)
+2026-02-15 20:52:25,986 - INFO - Scraping page 1 (Total collected: 0/150)
+2026-02-15 20:52:25,993 - INFO - Aggressive scrolling started... Aiming for ~150 items loaded in DOM
+2026-02-15 20:52:28,576 - INFO - Scroll iteration 0/30...
+2026-02-15 20:52:35,115 - INFO - Scroll stuck or reached bottom.
+2026-02-15 20:52:35,789 - WARNING - Validation error for data None: 1 validation error for BusinessLead
+business_name
+  Input should be a valid string [type=string_type, input_value=None, input_type=NoneType]
+    For further information visit https://errors.pydantic.dev/2.12/v/string_type
+2026-02-15 20:52:35,791 - INFO - Page 1: Found 21 items, Added 20 new. Total: 20
+2026-02-15 20:52:35,825 - INFO - No next page button found.
+2026-02-15 20:52:35,845 - INFO - Saved 20 records to C:\Users\Nayan\OneDrive\Documents\scrapper\output\leads_data.csv
+2026-02-15 20:52:36,986 - INFO - Scraping completed successfully.
+2026-02-15 21:13:49,286 - INFO - Starting Web Scraper for justdial...
+2026-02-15 21:13:51,234 - INFO - Navigating to https://www.justdial.com/pune/real+state+agent (Platform: justdial)
+2026-02-15 21:13:58,577 - INFO - Scraping page 1 (Total collected: 0/150)
+2026-02-15 21:13:58,578 - INFO - Aggressive scrolling started... Aiming for ~150 items loaded in DOM
+2026-02-15 21:14:01,216 - INFO - Scroll iteration 0/30...
+2026-02-15 21:14:07,567 - INFO - Scroll stuck or reached bottom.
+2026-02-15 21:14:08,881 - WARNING - Validation error for data None: 1 validation error for BusinessLead
+business_name
+  Input should be a valid string [type=string_type, input_value=None, input_type=NoneType]
+    For further information visit https://errors.pydantic.dev/2.12/v/string_type
+2026-02-15 21:14:08,882 - INFO - Page 1: Found 21 items, Added 20 new. Total: 20
+2026-02-15 21:14:08,944 - INFO - Standard navigation failed. Attempting forced URL for page 2
+2026-02-15 21:14:08,945 - INFO - Force navigating to: https://www.justdial.com/pune/real+state+agent/page-2
+2026-02-15 21:14:15,910 - INFO - Scraping page 2 (Total collected: 20/150)
+2026-02-15 21:14:15,944 - INFO - Aggressive scrolling started... Aiming for ~150 items loaded in DOM
+2026-02-15 21:14:18,547 - INFO - Scroll iteration 0/30...
+2026-02-15 21:14:26,780 - INFO - Scroll stuck or reached bottom.
+2026-02-15 21:14:27,336 - INFO - Duplicate detected: Pandit Properties (09035092135)
+2026-02-15 21:14:27,338 - WARNING - Validation error for data None: 1 validation error for BusinessLead
+business_name
+  Input should be a valid string [type=string_type, input_value=None, input_type=NoneType]
+    For further information visit https://errors.pydantic.dev/2.12/v/string_type
+2026-02-15 21:14:27,338 - INFO - Duplicate detected: Ichha Homes (09035209703)
+2026-02-15 21:14:27,339 - INFO - Duplicate detected: Prime Express Real Estate (07041812969)
+2026-02-15 21:14:27,340 - INFO - Duplicate detected: S M Real Estate and Solution (07383648671)
+2026-02-15 21:14:27,340 - INFO - Page 2: Found 21 items, Added 16 new. Total: 36
+2026-02-15 21:14:27,359 - INFO - Standard navigation failed. Attempting forced URL for page 3
+2026-02-15 21:14:27,360 - INFO - Force navigating to: https://www.justdial.com/pune/real+state+agent/page-3
+2026-02-15 21:14:34,116 - INFO - Scraping page 3 (Total collected: 36/150)
+2026-02-15 21:14:34,116 - INFO - Aggressive scrolling started... Aiming for ~150 items loaded in DOM
+2026-02-15 21:14:36,518 - INFO - Scroll iteration 0/30...
+2026-02-15 21:14:42,802 - INFO - Scroll stuck or reached bottom.
+2026-02-15 21:14:43,321 - INFO - Duplicate detected: Blessing Property ()
+2026-02-15 21:14:43,321 - INFO - Duplicate detected: OM SAI REAL ESTATE (09035092879)
+2026-02-15 21:14:43,322 - WARNING - Validation error for data None: 1 validation error for BusinessLead
+business_name
+  Input should be a valid string [type=string_type, input_value=None, input_type=NoneType]
+    For further information visit https://errors.pydantic.dev/2.12/v/string_type
+2026-02-15 21:14:43,322 - INFO - Duplicate detected: Vishwakarma Property Dealers (08511239676)
+2026-02-15 21:14:43,323 - INFO - Page 3: Found 21 items, Added 17 new. Total: 53
+2026-02-15 21:14:43,344 - INFO - Standard navigation failed. Attempting forced URL for page 4
+2026-02-15 21:14:43,344 - INFO - Force navigating to: https://www.justdial.com/pune/real+state+agent/page-4
+2026-02-15 21:14:49,119 - INFO - Scraping page 4 (Total collected: 53/150)
+2026-02-15 21:14:49,122 - INFO - Aggressive scrolling started... Aiming for ~150 items loaded in DOM
+2026-02-15 21:14:51,405 - INFO - Scroll iteration 0/30...
+2026-02-15 21:14:57,690 - INFO - Scroll stuck or reached bottom.
+2026-02-15 21:14:58,295 - INFO - Duplicate detected: Shubham Properties (08904256714)
+2026-02-15 21:14:58,295 - INFO - Duplicate detected: S M Real Estate and Solution (07383648671)
+2026-02-15 21:14:58,295 - INFO - Duplicate detected: Property Dot Com (09035217487)
+2026-02-15 21:14:58,296 - INFO - Duplicate detected: Sharda Properties (08487955539)
+2026-02-15 21:14:58,296 - INFO - Duplicate detected: Pandit Properties (09035092135)
+2026-02-15 21:14:58,297 - INFO - Duplicate detected: A Square Real Estate (07801974129)
+2026-02-15 21:14:58,297 - WARNING - Validation error for data None: 1 validation error for BusinessLead
+business_name
+  Input should be a valid string [type=string_type, input_value=None, input_type=NoneType]
+    For further information visit https://errors.pydantic.dev/2.12/v/string_type
+2026-02-15 21:14:58,298 - INFO - Duplicate detected: Parshva Estate Agent (09035092718)
+2026-02-15 21:14:58,298 - INFO - Page 4: Found 21 items, Added 13 new. Total: 66
+2026-02-15 21:14:58,317 - INFO - Standard navigation failed. Attempting forced URL for page 5
+2026-02-15 21:14:58,317 - INFO - Force navigating to: https://www.justdial.com/pune/real+state+agent/page-5
+2026-02-15 21:15:04,823 - INFO - Scraping page 5 (Total collected: 66/150)
+2026-02-15 21:15:04,827 - INFO - Aggressive scrolling started... Aiming for ~150 items loaded in DOM
+2026-02-15 21:15:06,886 - INFO - Scroll iteration 0/30...
+2026-02-15 21:15:13,091 - INFO - Scroll stuck or reached bottom.
+2026-02-15 21:15:13,636 - INFO - Duplicate detected: Sharda Properties (08487955539)
+2026-02-15 21:15:13,636 - INFO - Duplicate detected: Shree Digambara Developer (09980666892)
+2026-02-15 21:15:13,637 - INFO - Duplicate detected: Prociti Real Estate Consultant (08511665287)
+2026-02-15 21:15:13,637 - WARNING - Validation error for data None: 1 validation error for BusinessLead
+business_name
+  Input should be a valid string [type=string_type, input_value=None, input_type=NoneType]
+    For further information visit https://errors.pydantic.dev/2.12/v/string_type
+2026-02-15 21:15:13,638 - INFO - Duplicate detected: Parshva Estate Agent (09035092718)
+2026-02-15 21:15:13,638 - INFO - Duplicate detected: Dhansampada Properties (09606182371)
+2026-02-15 21:15:13,638 - INFO - Duplicate detected: H Con Properties ()
+2026-02-15 21:15:13,639 - INFO - Duplicate detected: Sadguru Properties (09035147694)
+2026-02-15 21:15:13,639 - INFO - Page 5: Found 21 items, Added 13 new. Total: 79
+2026-02-15 21:15:13,665 - INFO - Standard navigation failed. Attempting forced URL for page 6
+2026-02-15 21:15:13,683 - INFO - Force navigating to: https://www.justdial.com/pune/real+state+agent/page-6
+2026-02-15 21:15:18,979 - INFO - Scraping page 6 (Total collected: 79/150)
+2026-02-15 21:15:18,982 - INFO - Aggressive scrolling started... Aiming for ~150 items loaded in DOM
+2026-02-15 21:15:21,388 - INFO - Scroll iteration 0/30...
+2026-02-15 21:15:27,533 - INFO - Scroll stuck or reached bottom.
+2026-02-15 21:15:28,196 - INFO - Duplicate detected: Shubham Properties (08904256714)
+2026-02-15 21:15:28,196 - INFO - Duplicate detected: S M Real Estate and Solution (07383648671)
+2026-02-15 21:15:28,197 - INFO - Duplicate detected: Property Dot Com (09035217487)
+2026-02-15 21:15:28,197 - INFO - Duplicate detected: Sharda Properties (08487955539)
+2026-02-15 21:15:28,197 - INFO - Duplicate detected: Pandit Properties (09035092135)
+2026-02-15 21:15:28,198 - INFO - Duplicate detected: Swami Developers and Builders (08197404673)
+2026-02-15 21:15:28,198 - INFO - Duplicate detected: OM SAI REAL ESTATE (09035092879)
+2026-02-15 21:15:28,198 - WARNING - Validation error for data None: 1 validation error for BusinessLead
+business_name
+  Input should be a valid string [type=string_type, input_value=None, input_type=NoneType]
+    For further information visit https://errors.pydantic.dev/2.12/v/string_type
+2026-02-15 21:15:28,199 - INFO - Duplicate detected: Dhansampada Properties (09606182371)
+2026-02-15 21:15:28,199 - INFO - Duplicate detected: Ichha Homes (09035209703)
+2026-02-15 21:15:28,200 - INFO - Page 6: Found 21 items, Added 11 new. Total: 90
+2026-02-15 21:15:28,220 - INFO - Standard navigation failed. Attempting forced URL for page 7
+2026-02-15 21:15:28,221 - INFO - Force navigating to: https://www.justdial.com/pune/real+state+agent/page-7
+2026-02-15 21:15:33,867 - INFO - Scraping page 7 (Total collected: 90/150)
+2026-02-15 21:15:33,867 - INFO - Aggressive scrolling started... Aiming for ~150 items loaded in DOM
+2026-02-15 21:15:36,031 - INFO - Scroll iteration 0/30...
+2026-02-15 21:15:42,254 - INFO - Scroll stuck or reached bottom.
+2026-02-15 21:15:42,786 - INFO - Duplicate detected: Blessing Property ()
+2026-02-15 21:15:42,787 - INFO - Duplicate detected: Jmd Properties (08460304601)
+2026-02-15 21:15:42,787 - INFO - Duplicate detected: Shivadhyay Properties (08460111892)
+2026-02-15 21:15:42,787 - INFO - Duplicate detected: Om Sai Real Estate (09972424192)
+2026-02-15 21:15:42,788 - INFO - Duplicate detected: A Square Real Estate (07801974129)
+2026-02-15 21:15:42,788 - WARNING - Validation error for data None: 1 validation error for BusinessLead
+business_name
+  Input should be a valid string [type=string_type, input_value=None, input_type=NoneType]
+    For further information visit https://errors.pydantic.dev/2.12/v/string_type
+2026-02-15 21:15:42,788 - INFO - Duplicate detected: Prociti Real Estate Consultant (08511665287)
+2026-02-15 21:15:42,789 - INFO - Duplicate detected: Rainbow Realtors (08511529556)
+2026-02-15 21:15:42,790 - INFO - Page 7: Found 21 items, Added 13 new. Total: 103
+2026-02-15 21:15:42,807 - INFO - Standard navigation failed. Attempting forced URL for page 8
+2026-02-15 21:15:42,807 - INFO - Force navigating to: https://www.justdial.com/pune/real+state+agent/page-8
+2026-02-15 21:15:48,854 - INFO - Scraping page 8 (Total collected: 103/150)
+2026-02-15 21:15:48,863 - INFO - Aggressive scrolling started... Aiming for ~150 items loaded in DOM
+2026-02-15 21:15:51,115 - INFO - Scroll iteration 0/30...
+2026-02-15 21:15:57,273 - INFO - Scroll stuck or reached bottom.
+2026-02-15 21:15:57,999 - INFO - Duplicate detected: Homz 51 (07411840915)
+2026-02-15 21:15:57,999 - INFO - Duplicate detected: Ichha Homes (09035209703)
+2026-02-15 21:15:58,000 - INFO - Duplicate detected: Baner Properties (08123855072)
+2026-02-15 21:15:58,000 - INFO - Duplicate detected: Snehal Real Estate (07041507198)
+2026-02-15 21:15:58,000 - INFO - Duplicate detected: ICI Properties (08123641594)
+2026-02-15 21:15:58,001 - INFO - Duplicate detected: Shree Digambara Developer (09980666892)
+2026-02-15 21:15:58,001 - INFO - Duplicate detected: Blessing Property ()
+2026-02-15 21:15:58,001 - WARNING - Validation error for data None: 1 validation error for BusinessLead
+business_name
+  Input should be a valid string [type=string_type, input_value=None, input_type=NoneType]
+    For further information visit https://errors.pydantic.dev/2.12/v/string_type
+2026-02-15 21:15:58,002 - INFO - Duplicate detected: Shubham Properties (08904256714)
+2026-02-15 21:15:58,002 - INFO - Duplicate detected: Samruddhi Real Estate Agency (08904264674)
+2026-02-15 21:15:58,002 - INFO - Duplicate detected: H Con Properties ()
+2026-02-15 21:15:58,003 - INFO - Duplicate detected: ShaiRavi Homes (09035398280)
+2026-02-15 21:15:58,003 - INFO - Duplicate detected: Aditya Aryan Enterprises (07487948249)
+2026-02-15 21:15:58,003 - INFO - Page 8: Found 21 items, Added 8 new. Total: 111
+2026-02-15 21:15:58,025 - INFO - Standard navigation failed. Attempting forced URL for page 9
+2026-02-15 21:15:58,025 - INFO - Force navigating to: https://www.justdial.com/pune/real+state+agent/page-9
+2026-02-15 21:16:03,945 - INFO - Scraping page 9 (Total collected: 111/150)
+2026-02-15 21:16:03,945 - INFO - Aggressive scrolling started... Aiming for ~150 items loaded in DOM
+2026-02-15 21:16:06,006 - INFO - Scroll iteration 0/30...
+2026-02-15 21:16:12,230 - INFO - Scroll stuck or reached bottom.
+2026-02-15 21:16:12,749 - INFO - Duplicate detected: Shubham Properties (08904256714)
+2026-02-15 21:16:12,749 - INFO - Duplicate detected: S M Real Estate and Solution (07383648671)
+2026-02-15 21:16:12,749 - INFO - Duplicate detected: Property Dot Com (09035217487)
+2026-02-15 21:16:12,750 - INFO - Duplicate detected: Sharda Properties (08487955539)
+2026-02-15 21:16:12,750 - INFO - Duplicate detected: Pandit Properties (09035092135)
+2026-02-15 21:16:12,750 - INFO - Duplicate detected: ShaiRavi Homes (09035398280)
+2026-02-15 21:16:12,751 - INFO - Duplicate detected: ICI Properties (08123641594)
+2026-02-15 21:16:12,751 - INFO - Duplicate detected: Shivadhyay Properties (08460111892)
+2026-02-15 21:16:12,751 - INFO - Duplicate detected: Rainbow Realtors (08511529556)
+2026-02-15 21:16:12,752 - WARNING - Validation error for data None: 1 validation error for BusinessLead
+business_name
+  Input should be a valid string [type=string_type, input_value=None, input_type=NoneType]
+    For further information visit https://errors.pydantic.dev/2.12/v/string_type
+2026-02-15 21:16:12,752 - INFO - Duplicate detected: Mehta Real Estate Consultants (09035067023)
+2026-02-15 21:16:12,752 - INFO - Duplicate detected: Homesphere (09724786601)
+2026-02-15 21:16:12,753 - INFO - Duplicate detected: Urban Farms (07490065396)
+2026-02-15 21:16:12,753 - INFO - Duplicate detected: Aaditi Realty (09606159599)
+2026-02-15 21:16:12,754 - INFO - Duplicate detected: H Con Properties ()
+2026-02-15 21:16:12,755 - INFO - Duplicate detected: Babar Enterprises (09724731141)
+2026-02-15 21:16:12,756 - INFO - Duplicate detected: A Square Real Estate (07801974129)
+2026-02-15 21:16:12,757 - INFO - Page 9: Found 21 items, Added 4 new. Total: 115
+2026-02-15 21:16:12,779 - INFO - Standard navigation failed. Attempting forced URL for page 10
+2026-02-15 21:16:12,780 - INFO - Force navigating to: https://www.justdial.com/pune/real+state+agent/page-10
+2026-02-15 21:16:17,848 - INFO - Scraping page 10 (Total collected: 115/150)
+2026-02-15 21:16:17,851 - INFO - Aggressive scrolling started... Aiming for ~150 items loaded in DOM
+2026-02-15 21:16:20,107 - INFO - Scroll iteration 0/30...
+2026-02-15 21:16:26,386 - INFO - Scroll stuck or reached bottom.
+2026-02-15 21:16:27,050 - INFO - Duplicate detected: Shubham Properties (08904256714)
+2026-02-15 21:16:27,050 - INFO - Duplicate detected: S M Real Estate and Solution (07383648671)
+2026-02-15 21:16:27,050 - INFO - Duplicate detected: Property Dot Com (09035217487)
+2026-02-15 21:16:27,051 - INFO - Duplicate detected: Sharda Properties (08487955539)
+2026-02-15 21:16:27,051 - INFO - Duplicate detected: Pandit Properties (09035092135)
+2026-02-15 21:16:27,051 - INFO - Duplicate detected: Shivam Enterprises (08128329688)
+2026-02-15 21:16:27,052 - INFO - Duplicate detected: Om Sai Real Estate (09972424192)
+2026-02-15 21:16:27,052 - INFO - Duplicate detected: Property Zone (09980029597)
+2026-02-15 21:16:27,052 - INFO - Duplicate detected: Ansh Koli Enterprises (08488835724)
+2026-02-15 21:16:27,053 - WARNING - Validation error for data None: 1 validation error for BusinessLead
+business_name
+  Input should be a valid string [type=string_type, input_value=None, input_type=NoneType]
+    For further information visit https://errors.pydantic.dev/2.12/v/string_type
+2026-02-15 21:16:27,053 - INFO - Duplicate detected: Prociti Real Estate Consultant (08511665287)
+2026-02-15 21:16:27,053 - INFO - Duplicate detected: Shri Balaji Real Estate (09035065831)
+2026-02-15 21:16:27,054 - INFO - Duplicate detected: Swami Developers and Builders (08197404673)
+2026-02-15 21:16:27,054 - INFO - Duplicate detected: Blessing Property ()
+2026-02-15 21:16:27,055 - INFO - Page 10: Found 21 items, Added 7 new. Total: 122
+2026-02-15 21:16:27,077 - INFO - Standard navigation failed. Attempting forced URL for page 11
+2026-02-15 21:16:27,078 - INFO - Force navigating to: https://www.justdial.com/pune/real+state+agent/page-11
+2026-02-15 21:16:32,854 - INFO - Scraping page 11 (Total collected: 122/150)
+2026-02-15 21:16:32,855 - INFO - Aggressive scrolling started... Aiming for ~150 items loaded in DOM
+2026-02-15 21:16:35,203 - INFO - Scroll iteration 0/30...
+2026-02-15 21:16:41,466 - INFO - Scroll stuck or reached bottom.
+2026-02-15 21:16:42,036 - INFO - Duplicate detected: Shubham Properties (08904256714)
+2026-02-15 21:16:42,036 - INFO - Duplicate detected: Shree Sai Realty (09035138020)
+2026-02-15 21:16:42,036 - INFO - Duplicate detected: S M Real Estate and Solution (07383648671)
+2026-02-15 21:16:42,037 - INFO - Duplicate detected: Aventra Housing (09035388190)
+2026-02-15 21:16:42,037 - INFO - Duplicate detected: Anil Jadhav Enterprises (09035157366)
+2026-02-15 21:16:42,037 - INFO - Duplicate detected: Dhansampada Properties (09606182371)
+2026-02-15 21:16:42,037 - INFO - Duplicate detected: Gharonda Estates (07383711805)
+2026-02-15 21:16:42,038 - INFO - Duplicate detected: Urban Farms (07490065396)
+2026-02-15 21:16:42,038 - INFO - Duplicate detected: Pandit Properties (09035092135)
+2026-02-15 21:16:42,038 - WARNING - Validation error for data None: 1 validation error for BusinessLead
+business_name
+  Input should be a valid string [type=string_type, input_value=None, input_type=NoneType]
+    For further information visit https://errors.pydantic.dev/2.12/v/string_type
+2026-02-15 21:16:42,039 - INFO - Duplicate detected: Mascot Properties Solution (08401528990)
+2026-02-15 21:16:42,039 - INFO - Duplicate detected: R B Enterprises (09035270134)
+2026-02-15 21:16:42,039 - INFO - Duplicate detected: Aditya Aryan Enterprises (07487948249)
+2026-02-15 21:16:42,040 - INFO - Duplicate detected: Parshva Estate Agent (09035092718)
+2026-02-15 21:16:42,040 - INFO - Duplicate detected: Friends Real Estate ()
+2026-02-15 21:16:42,040 - INFO - Duplicate detected: Poona Properties (09035084519)
+2026-02-15 21:16:42,040 - INFO - Page 11: Found 21 items, Added 5 new. Total: 127
+2026-02-15 21:16:42,065 - INFO - Standard navigation failed. Attempting forced URL for page 12
+2026-02-15 21:16:42,066 - INFO - Force navigating to: https://www.justdial.com/pune/real+state+agent/page-12
+2026-02-15 21:16:47,634 - INFO - Scraping page 12 (Total collected: 127/150)
+2026-02-15 21:16:47,670 - INFO - Aggressive scrolling started... Aiming for ~150 items loaded in DOM
+2026-02-15 21:16:49,838 - INFO - Scroll iteration 0/30...
+2026-02-15 21:16:56,097 - INFO - Scroll stuck or reached bottom.
+2026-02-15 21:16:56,640 - INFO - Duplicate detected: Prime Express Real Estate (07041812969)
+2026-02-15 21:16:56,641 - INFO - Duplicate detected: Aditya Aryan Enterprises (07487948249)
+2026-02-15 21:16:56,641 - INFO - Duplicate detected: Poona Properties (09035084519)
+2026-02-15 21:16:56,641 - INFO - Duplicate detected: Shivadhyay Properties (08460111892)
+2026-02-15 21:16:56,642 - INFO - Duplicate detected: Parshva Estate Agent (09035092718)
+2026-02-15 21:16:56,642 - WARNING - Validation error for data None: 1 validation error for BusinessLead
+business_name
+  Input should be a valid string [type=string_type, input_value=None, input_type=NoneType]
+    For further information visit https://errors.pydantic.dev/2.12/v/string_type
+2026-02-15 21:16:56,642 - INFO - Duplicate detected: Property Zone (09980029597)
+2026-02-15 21:16:56,642 - INFO - Duplicate detected: Swami Developers and Builders (08197404673)
+2026-02-15 21:16:56,643 - INFO - Duplicate detected: Laxmi Real Estate (08460412828)
+2026-02-15 21:16:56,643 - INFO - Duplicate detected: Blessing Property ()
+2026-02-15 21:16:56,643 - INFO - Duplicate detected: Ichha Homes (09035209703)
+2026-02-15 21:16:56,644 - INFO - Duplicate detected: Namo Properties (08123558307)
+2026-02-15 21:16:56,644 - INFO - Page 12: Found 21 items, Added 9 new. Total: 136
+2026-02-15 21:16:56,664 - INFO - Standard navigation failed. Attempting forced URL for page 13
+2026-02-15 21:16:56,665 - INFO - Force navigating to: https://www.justdial.com/pune/real+state+agent/page-13
+2026-02-15 21:17:01,464 - INFO - Scraping page 13 (Total collected: 136/150)
+2026-02-15 21:17:01,471 - INFO - Aggressive scrolling started... Aiming for ~150 items loaded in DOM
+2026-02-15 21:17:03,918 - INFO - Scroll iteration 0/30...
+2026-02-15 21:17:10,201 - INFO - Scroll stuck or reached bottom.
+2026-02-15 21:17:10,897 - INFO - Duplicate detected: Blessing Property ()
+2026-02-15 21:17:10,898 - INFO - Duplicate detected: Ichha Homes (09035209703)
+2026-02-15 21:17:10,898 - INFO - Duplicate detected: ShaiRavi Homes (09035398280)
+2026-02-15 21:17:10,898 - INFO - Duplicate detected: Shivadhyay Properties (08460111892)
+2026-02-15 21:17:10,899 - INFO - Duplicate detected: Friends Real Estate ()
+2026-02-15 21:17:10,899 - INFO - Duplicate detected: Shubham Properties (08904256714)
+2026-02-15 21:17:10,899 - WARNING - Validation error for data None: 1 validation error for BusinessLead
+business_name
+  Input should be a valid string [type=string_type, input_value=None, input_type=NoneType]
+    For further information visit https://errors.pydantic.dev/2.12/v/string_type
+2026-02-15 21:17:10,900 - INFO - Duplicate detected: Aundh Properties (09035072372)
+2026-02-15 21:17:10,900 - INFO - Duplicate detected: Hari Om Estate Agency (08490982157)
+2026-02-15 21:17:10,900 - INFO - Duplicate detected: Akash Raje Developers (09725675686)
+2026-02-15 21:17:10,901 - INFO - Page 13: Found 21 items, Added 11 new. Total: 147
+2026-02-15 21:17:10,918 - INFO - Standard navigation failed. Attempting forced URL for page 14
+2026-02-15 21:17:10,918 - INFO - Force navigating to: https://www.justdial.com/pune/real+state+agent/page-14
+2026-02-15 21:17:17,911 - INFO - Scraping page 14 (Total collected: 147/150)
+2026-02-15 21:17:17,911 - INFO - Aggressive scrolling started... Aiming for ~150 items loaded in DOM
+2026-02-15 21:17:19,972 - INFO - Scroll iteration 0/30...
+2026-02-15 21:17:26,109 - INFO - Scroll stuck or reached bottom.
+2026-02-15 21:17:26,747 - INFO - Duplicate detected: Parshva Estate Agent (09035092718)
+2026-02-15 21:17:26,748 - INFO - Duplicate detected: S M Real Estate and Solution (07383648671)
+2026-02-15 21:17:26,748 - INFO - Duplicate detected: Laxmi Real Estate (08460412828)
+2026-02-15 21:17:26,748 - INFO - Duplicate detected: Namo Properties (08123558307)
+2026-02-15 21:17:26,748 - INFO - Duplicate detected: Poona Properties (09035084519)
+2026-02-15 21:17:26,749 - INFO - Duplicate detected: Urban Farms (07490065396)
+2026-02-15 21:17:26,749 - INFO - Duplicate detected: Prime Express Real Estate (07041812969)
+2026-02-15 21:17:26,749 - INFO - Duplicate detected: Mehta Real Estate Consultants (09035067023)
+2026-02-15 21:17:26,749 - WARNING - Validation error for data None: 1 validation error for BusinessLead
+business_name
+  Input should be a valid string [type=string_type, input_value=None, input_type=NoneType]
+    For further information visit https://errors.pydantic.dev/2.12/v/string_type
+2026-02-15 21:17:26,750 - INFO - Duplicate detected: Dnyanganga Real Estate (08147106220)
+2026-02-15 21:17:26,750 - INFO - Duplicate detected: ABHINAV ENTERPRISES (09035807720)
+2026-02-15 21:17:26,750 - INFO - Duplicate detected: ICI Properties (08123641594)
+2026-02-15 21:17:26,751 - INFO - Duplicate detected: A Square Real Estate (07801974129)
+2026-02-15 21:17:26,751 - INFO - Duplicate detected: Shree Digambara Developer (09980666892)
+2026-02-15 21:17:26,751 - INFO - Duplicate detected: Shubham Properties (08904256714)
+2026-02-15 21:17:26,751 - INFO - Page 14: Found 21 items, Added 6 new. Total: 153
+2026-02-15 21:17:26,752 - INFO - Target records reached!
+2026-02-15 21:17:26,779 - INFO - Saved 153 records to C:\Users\Nayan\OneDrive\Documents\scrapper\output\leads_data.csv
+2026-02-15 21:17:28,121 - INFO - Scraping completed successfully.
+2026-02-16 00:07:25,979 - INFO - Starting Web Scraper for justdial...
+2026-02-16 00:07:38,486 - INFO - Navigating to https://www.justdial.com/Pune+Wakad/painter (Platform: justdial)
+2026-02-16 00:07:46,287 - INFO - Scraping page 1 (Total collected: 0/150)
+2026-02-16 00:07:46,297 - INFO - Aggressive scrolling started... Aiming for ~150 items loaded in DOM
+2026-02-16 00:07:49,159 - INFO - Scroll iteration 0/30...
+2026-02-16 00:07:57,780 - INFO - Scroll stuck or reached bottom.
+2026-02-16 00:07:58,462 - WARNING - Validation error for data None: 1 validation error for BusinessLead
+business_name
+  Input should be a valid string [type=string_type, input_value=None, input_type=NoneType]
+    For further information visit https://errors.pydantic.dev/2.12/v/string_type
+2026-02-16 00:07:58,462 - INFO - Page 1: Found 21 items, Added 20 new. Total: 20
+2026-02-16 00:07:58,497 - INFO - Standard navigation failed. Attempting forced URL for page 2
+2026-02-16 00:07:58,497 - INFO - Force navigating to: https://www.justdial.com/Pune+Wakad/painter/page-2
+2026-02-16 00:08:05,640 - INFO - Scraping page 2 (Total collected: 20/150)
+2026-02-16 00:08:05,644 - INFO - Aggressive scrolling started... Aiming for ~150 items loaded in DOM
+2026-02-16 00:08:07,711 - INFO - Scroll iteration 0/30...
+2026-02-16 00:08:13,975 - INFO - Scroll stuck or reached bottom.
+2026-02-16 00:08:14,549 - INFO - Duplicate detected: Kansai Nerolac Paints Limited (09980861943)
+2026-02-16 00:08:14,550 - INFO - Duplicate detected: Sonakshi Colours & Coatings (08050853101)
+2026-02-16 00:08:14,550 - INFO - Duplicate detected: Chandu Decor Arts (08128885728)
+2026-02-16 00:08:14,551 - WARNING - Validation error for data None: 1 validation error for BusinessLead
+business_name
+  Input should be a valid string [type=string_type, input_value=None, input_type=NoneType]
+    For further information visit https://errors.pydantic.dev/2.12/v/string_type
+2026-02-16 00:08:14,551 - INFO - Duplicate detected: Universal Home Solution (08460504833)
+2026-02-16 00:08:14,552 - INFO - Duplicate detected: Khan Painting Contractor (08904960352)
+2026-02-16 00:08:14,552 - INFO - Duplicate detected: Priya Enterprises (09845477134)
+2026-02-16 00:08:14,552 - INFO - Duplicate detected: Musheer Ali Enterprises (08460515454)
+2026-02-16 00:08:14,552 - INFO - Duplicate detected: Mahalaxmi Enterprises (09054086023)
+2026-02-16 00:08:14,553 - INFO - Duplicate detected: Jan Seva Group (Turnkey Civil Project Contractors and Engineers) (09980703373)
+2026-02-16 00:08:14,553 - INFO - Page 2: Found 21 items, Added 11 new. Total: 31
+2026-02-16 00:08:14,571 - INFO - Standard navigation failed. Attempting forced URL for page 3
+2026-02-16 00:08:14,571 - INFO - Force navigating to: https://www.justdial.com/Pune+Wakad/painter/page-3
+2026-02-16 00:08:21,263 - INFO - Scraping page 3 (Total collected: 31/150)
+2026-02-16 00:08:21,269 - INFO - Aggressive scrolling started... Aiming for ~150 items loaded in DOM
+2026-02-16 00:08:23,684 - INFO - Scroll iteration 0/30...
+2026-02-16 00:08:29,992 - INFO - Scroll stuck or reached bottom.
+2026-02-16 00:08:30,521 - INFO - Duplicate detected: Kansai Nerolac Paints Limited (09980861943)
+2026-02-16 00:08:30,521 - INFO - Duplicate detected: Universal Home Solution (08460504833)
+2026-02-16 00:08:30,522 - INFO - Duplicate detected: Chandu Decor Arts (08128885728)
+2026-02-16 00:08:30,522 - INFO - Duplicate detected: Sumeet Enterprises (08123040461)
+2026-02-16 00:08:30,522 - INFO - Duplicate detected: Bk Plumbing Services (09972201184)
+2026-02-16 00:08:30,523 - WARNING - Validation error for data None: 1 validation error for BusinessLead
+business_name
+  Input should be a valid string [type=string_type, input_value=None, input_type=NoneType]
+    For further information visit https://errors.pydantic.dev/2.12/v/string_type
+2026-02-16 00:08:30,524 - INFO - Duplicate detected: Mahalaxmi Enterprises (09054086023)
+2026-02-16 00:08:30,524 - INFO - Duplicate detected: Ganesh Dhanshree (08147432017)
+2026-02-16 00:08:30,524 - INFO - Duplicate detected: Musheer Ali Enterprises (08460515454)
+2026-02-16 00:08:30,531 - INFO - Page 3: Found 21 items, Added 12 new. Total: 43
+2026-02-16 00:08:30,554 - INFO - Standard navigation failed. Attempting forced URL for page 4
+2026-02-16 00:08:30,554 - INFO - Force navigating to: https://www.justdial.com/Pune+Wakad/painter/page-4
+2026-02-16 00:08:36,258 - INFO - Scraping page 4 (Total collected: 43/150)
+2026-02-16 00:08:36,338 - INFO - Aggressive scrolling started... Aiming for ~150 items loaded in DOM
+2026-02-16 00:08:38,775 - INFO - Scroll iteration 0/30...
+2026-02-16 00:08:44,939 - INFO - Scroll stuck or reached bottom.
+2026-02-16 00:08:45,544 - INFO - Duplicate detected: Kansai Nerolac Paints Limited (09980861943)
+2026-02-16 00:08:45,545 - INFO - Duplicate detected: Urmila Interiors (08511899904)
+2026-02-16 00:08:45,545 - INFO - Duplicate detected: Sudhir Kadam Painting Contractor (08050223473)
+2026-02-16 00:08:45,545 - INFO - Duplicate detected: Khan Painting Contractor (08904960352)
+2026-02-16 00:08:45,546 - INFO - Duplicate detected: Universal Home Solution (08460504833)
+2026-02-16 00:08:45,546 - INFO - Duplicate detected: Ashwani Interior and Exterior Painting Works (08460260135)
+2026-02-16 00:08:45,546 - WARNING - Validation error for data None: 1 validation error for BusinessLead
+business_name
+  Input should be a valid string [type=string_type, input_value=None, input_type=NoneType]
+    For further information visit https://errors.pydantic.dev/2.12/v/string_type
+2026-02-16 00:08:45,547 - INFO - Duplicate detected: Mumbai Painters (08147956097)
+2026-02-16 00:08:45,547 - INFO - Duplicate detected: Sai Raj Plumber Work and Civil Work (ITI Ncvt Plumber) (08511049756)
+2026-02-16 00:08:45,548 - INFO - Duplicate detected: Sumeet Enterprises (08123040461)
+2026-02-16 00:08:45,548 - INFO - Duplicate detected: Ganesh Dhanshree (08147432017)
+2026-02-16 00:08:45,548 - INFO - Page 4: Found 21 items, Added 10 new. Total: 53
+2026-02-16 00:08:45,568 - INFO - Standard navigation failed. Attempting forced URL for page 5
+2026-02-16 00:08:45,569 - INFO - Force navigating to: https://www.justdial.com/Pune+Wakad/painter/page-5
+2026-02-16 00:08:52,292 - INFO - Scraping page 5 (Total collected: 53/150)
+2026-02-16 00:08:52,292 - INFO - Aggressive scrolling started... Aiming for ~150 items loaded in DOM
+2026-02-16 00:08:54,333 - INFO - Scroll iteration 0/30...
+2026-02-16 00:09:00,485 - INFO - Scroll stuck or reached bottom.
+2026-02-16 00:09:01,013 - INFO - Duplicate detected: Kansai Nerolac Paints Limited (09980861943)
+2026-02-16 00:09:01,014 - INFO - Duplicate detected: Khan Painting Contractor (08904960352)
+2026-02-16 00:09:01,014 - INFO - Duplicate detected: Universal Home Solution (08460504833)
+2026-02-16 00:09:01,015 - INFO - Duplicate detected: Sudhir Kadam Painting Contractor (08050223473)
+2026-02-16 00:09:01,015 - INFO - Duplicate detected: Jai Maa Bhavani Plumbing (09845442107)
+2026-02-16 00:09:01,016 - INFO - Duplicate detected: Shine Painters (07490029793)
+2026-02-16 00:09:01,016 - INFO - Duplicate detected: Tailorbird Interiors (09036614629)
+2026-02-16 00:09:01,016 - WARNING - Validation error for data None: 1 validation error for BusinessLead
+business_name
+  Input should be a valid string [type=string_type, input_value=None, input_type=NoneType]
+    For further information visit https://errors.pydantic.dev/2.12/v/string_type
+2026-02-16 00:09:01,017 - INFO - Duplicate detected: Sumeet Enterprises (08123040461)
+2026-02-16 00:09:01,018 - INFO - Duplicate detected: Painterwala (08401931256)
+2026-02-16 00:09:01,018 - INFO - Duplicate detected: S K Balakrishnan Waterproofing Contractor (09035218420)
+2026-02-16 00:09:01,018 - INFO - Duplicate detected: Mahalaxmi Enterprises (09054086023)
+2026-02-16 00:09:01,019 - INFO - Duplicate detected: Amjad Shaikh Plumber (09972306967)
+2026-02-16 00:09:01,020 - INFO - Page 5: Found 21 items, Added 8 new. Total: 61
+2026-02-16 00:09:01,079 - INFO - Standard navigation failed. Attempting forced URL for page 6
+2026-02-16 00:09:01,079 - INFO - Force navigating to: https://www.justdial.com/Pune+Wakad/painter/page-6
+2026-02-16 00:09:07,503 - INFO - Scraping page 6 (Total collected: 61/150)
+2026-02-16 00:09:07,506 - INFO - Aggressive scrolling started... Aiming for ~150 items loaded in DOM
+2026-02-16 00:09:09,577 - INFO - Scroll iteration 0/30...
+2026-02-16 00:09:15,793 - INFO - Scroll stuck or reached bottom.
+2026-02-16 00:09:16,431 - INFO - Duplicate detected: Kansai Nerolac Paints Limited (09980861943)
+2026-02-16 00:09:16,431 - INFO - Duplicate detected: K F Enterprises (08123567829)
+2026-02-16 00:09:16,432 - INFO - Duplicate detected: Painterwala (08401931256)
+2026-02-16 00:09:16,432 - INFO - Duplicate detected: Sumeet Enterprises (08123040461)
+2026-02-16 00:09:16,432 - INFO - Duplicate detected: Khan Painting Contractor (08904960352)
+2026-02-16 00:09:16,433 - INFO - Duplicate detected: Raunak Enterprise (09725164780)
+2026-02-16 00:09:16,433 - WARNING - Validation error for data None: 1 validation error for BusinessLead
+business_name
+  Input should be a valid string [type=string_type, input_value=None, input_type=NoneType]
+    For further information visit https://errors.pydantic.dev/2.12/v/string_type
+2026-02-16 00:09:16,434 - INFO - Duplicate detected: Tailorbird Interiors (09036614629)
+2026-02-16 00:09:16,434 - INFO - Duplicate detected: Sai Raj Plumber Work and Civil Work (ITI Ncvt Plumber) (08511049756)
+2026-02-16 00:09:16,435 - INFO - Duplicate detected: Jan Seva Group (Turnkey Civil Project Contractors and Engineers) (09980703373)
+2026-02-16 00:09:16,435 - INFO - Duplicate detected: Sudhir Kadam Painting Contractor (08050223473)
+2026-02-16 00:09:16,435 - INFO - Page 6: Found 21 items, Added 10 new. Total: 71
+2026-02-16 00:09:16,458 - INFO - Standard navigation failed. Attempting forced URL for page 7
+2026-02-16 00:09:16,459 - INFO - Force navigating to: https://www.justdial.com/Pune+Wakad/painter/page-7
+2026-02-16 00:09:22,455 - INFO - Scraping page 7 (Total collected: 71/150)
+2026-02-16 00:09:22,466 - INFO - Aggressive scrolling started... Aiming for ~150 items loaded in DOM
+2026-02-16 00:09:24,602 - INFO - Scroll iteration 0/30...
+2026-02-16 00:09:30,906 - INFO - Scroll stuck or reached bottom.
+2026-02-16 00:09:31,477 - INFO - Duplicate detected: Khan Painting Contractor (08904960352)
+2026-02-16 00:09:31,478 - INFO - Duplicate detected: Kansai Nerolac Paints Limited (09980861943)
+2026-02-16 00:09:31,478 - INFO - Duplicate detected: Dharam Furniture Enterprises (08401947122)
+2026-02-16 00:09:31,478 - INFO - Duplicate detected: Tailorbird Interiors (09036614629)
+2026-02-16 00:09:31,479 - INFO - Duplicate detected: Sumeet Enterprises (08123040461)
+2026-02-16 00:09:31,479 - INFO - Duplicate detected: Painterwala (08401931256)
+2026-02-16 00:09:31,480 - WARNING - Validation error for data None: 1 validation error for BusinessLead
+business_name
+  Input should be a valid string [type=string_type, input_value=None, input_type=NoneType]
+    For further information visit https://errors.pydantic.dev/2.12/v/string_type
+2026-02-16 00:09:31,480 - INFO - Duplicate detected: V.V.Gaikwad Enterprises (08123456588)
+2026-02-16 00:09:31,480 - INFO - Duplicate detected: Sonakshi Colours & Coatings (08050853101)
+2026-02-16 00:09:31,481 - INFO - Duplicate detected: Aarya Interiors & Furnitures (09980797961)
+2026-02-16 00:09:31,481 - INFO - Duplicate detected: Soni Enterprises (08904623018)
+2026-02-16 00:09:31,481 - INFO - Duplicate detected: K F Enterprises (08123567829)
+2026-02-16 00:09:31,482 - INFO - Duplicate detected: Sudhir Kadam Painting Contractor (08050223473)
+2026-02-16 00:09:31,482 - INFO - Page 7: Found 21 items, Added 8 new. Total: 79
+2026-02-16 00:09:31,544 - INFO - Standard navigation failed. Attempting forced URL for page 8
+2026-02-16 00:09:31,544 - INFO - Force navigating to: https://www.justdial.com/Pune+Wakad/painter/page-8
+2026-02-16 00:09:38,465 - INFO - Scraping page 8 (Total collected: 79/150)
+2026-02-16 00:09:38,465 - INFO - Aggressive scrolling started... Aiming for ~150 items loaded in DOM
+2026-02-16 00:09:40,553 - INFO - Scroll iteration 0/30...
+2026-02-16 00:09:46,737 - INFO - Scroll stuck or reached bottom.
+2026-02-16 00:09:47,286 - INFO - Duplicate detected: Kansai Nerolac Paints Limited (09980861943)
+2026-02-16 00:09:47,286 - INFO - Duplicate detected: Khan Painting Contractor (08904960352)
+2026-02-16 00:09:47,287 - INFO - Duplicate detected: YASH TEJ INTERIOR & DECORATORS (08105822436)
+2026-02-16 00:09:47,288 - INFO - Duplicate detected: Sudhir Kadam Painting Contractor (08050223473)
+2026-02-16 00:09:47,288 - INFO - Duplicate detected: Smart Home Painter (09845451197)
+2026-02-16 00:09:47,288 - INFO - Duplicate detected: Jitendra Painting and Furniture Polishing (08401228932)
+2026-02-16 00:09:47,289 - INFO - Duplicate detected: Shaikh Enterprises (08460483980)
+2026-02-16 00:09:47,289 - INFO - Duplicate detected: Amjad Shaikh Plumber (09972306967)
+2026-02-16 00:09:47,290 - INFO - Duplicate detected: Tailorbird Interiors (09036614629)
+2026-02-16 00:09:47,290 - WARNING - Validation error for data None: 1 validation error for BusinessLead
+business_name
+  Input should be a valid string [type=string_type, input_value=None, input_type=NoneType]
+    For further information visit https://errors.pydantic.dev/2.12/v/string_type
+2026-02-16 00:09:47,290 - INFO - Duplicate detected: Sonakshi Colours & Coatings (08050853101)
+2026-02-16 00:09:47,291 - INFO - Duplicate detected: The Home Decore (08460215391)
+2026-02-16 00:09:47,292 - INFO - Duplicate detected: Habib Painting Work (09054081492)
+2026-02-16 00:09:47,292 - INFO - Duplicate detected: Well Connect Services (08147956030)
+2026-02-16 00:09:47,292 - INFO - Duplicate detected: Sunil Painter (09054472980)
+2026-02-16 00:09:47,293 - INFO - Duplicate detected: Painterwala (08401931256)
+2026-02-16 00:09:47,293 - INFO - Duplicate detected: Musheer Ali Enterprises (08460515454)
+2026-02-16 00:09:47,293 - INFO - Duplicate detected: Durva Arts (07411653102)
+2026-02-16 00:09:47,294 - INFO - Duplicate detected: Jiya Enterprises (09845438814)
+2026-02-16 00:09:47,294 - INFO - Page 8: Found 21 items, Added 2 new. Total: 81
+2026-02-16 00:09:47,313 - INFO - Standard navigation failed. Attempting forced URL for page 9
+2026-02-16 00:09:47,314 - INFO - Force navigating to: https://www.justdial.com/Pune+Wakad/painter/page-9
+2026-02-16 00:09:52,747 - INFO - Scraping page 9 (Total collected: 81/150)
+2026-02-16 00:09:52,768 - INFO - Aggressive scrolling started... Aiming for ~150 items loaded in DOM
+2026-02-16 00:09:55,322 - INFO - Scroll iteration 0/30...
+2026-02-16 00:10:01,619 - INFO - Scroll stuck or reached bottom.
+2026-02-16 00:10:02,287 - INFO - Duplicate detected: Kansai Nerolac Paints Limited (09980861943)
+2026-02-16 00:10:02,287 - INFO - Duplicate detected: Sumeet Enterprises (08123040461)
+2026-02-16 00:10:02,288 - INFO - Duplicate detected: Musheer Ali Enterprises (08460515454)
+2026-02-16 00:10:02,288 - INFO - Duplicate detected: Tailorbird Interiors (09036614629)
+2026-02-16 00:10:02,288 - INFO - Duplicate detected: Creative Artss (09845224735)
+2026-02-16 00:10:02,289 - INFO - Duplicate detected: Priya Enterprises (09845477134)
+2026-02-16 00:10:02,289 - INFO - Duplicate detected: Mahalaxmi Enterprises (09054086023)
+2026-02-16 00:10:02,290 - INFO - Duplicate detected: Universal Home Solution (08460504833)
+2026-02-16 00:10:02,290 - WARNING - Validation error for data None: 1 validation error for BusinessLead
+business_name
+  Input should be a valid string [type=string_type, input_value=None, input_type=NoneType]
+    For further information visit https://errors.pydantic.dev/2.12/v/string_type
+2026-02-16 00:10:02,291 - INFO - Duplicate detected: BEST Painter In Mumbai (08460510535)
+2026-02-16 00:10:02,291 - INFO - Duplicate detected: Jitendra Painting and Furniture Polishing (08401228932)
+2026-02-16 00:10:02,292 - INFO - Duplicate detected: Urmila Interiors (08511899904)
+2026-02-16 00:10:02,292 - INFO - Duplicate detected: Sudhir Kadam Painting Contractor (08050223473)
+2026-02-16 00:10:02,293 - INFO - Duplicate detected: Shine Painters (07490029793)
+2026-02-16 00:10:02,293 - INFO - Duplicate detected: Amjad Shaikh Plumber (09972306967)
+2026-02-16 00:10:02,294 - INFO - Page 9: Found 21 items, Added 6 new. Total: 87
+2026-02-16 00:10:02,316 - INFO - Standard navigation failed. Attempting forced URL for page 10
+2026-02-16 00:10:02,316 - INFO - Force navigating to: https://www.justdial.com/Pune+Wakad/painter/page-10
+2026-02-16 00:10:09,192 - INFO - Scraping page 10 (Total collected: 87/150)
+2026-02-16 00:10:09,192 - INFO - Aggressive scrolling started... Aiming for ~150 items loaded in DOM
+2026-02-16 00:10:11,263 - INFO - Scroll iteration 0/30...
+2026-02-16 00:10:17,460 - INFO - Scroll stuck or reached bottom.
+2026-02-16 00:10:18,161 - INFO - Duplicate detected: Kansai Nerolac Paints Limited (09980861943)
+2026-02-16 00:10:18,161 - INFO - Duplicate detected: Musheer Ali Enterprises (08460515454)
+2026-02-16 00:10:18,162 - INFO - Duplicate detected: Sudhir Kadam Painting Contractor (08050223473)
+2026-02-16 00:10:18,162 - INFO - Duplicate detected: Khan Painting Contractor (08904960352)
+2026-02-16 00:10:18,162 - INFO - Duplicate detected: Ram Interior (07487841770)
+2026-02-16 00:10:18,163 - INFO - Duplicate detected: Chhaya Painting & Construction Company (07383619301)
+2026-02-16 00:10:18,163 - INFO - Duplicate detected: Jiya Enterprises (09845438814)
+2026-02-16 00:10:18,163 - INFO - Duplicate detected: Sumeet Enterprises (08123040461)
+2026-02-16 00:10:18,164 - INFO - Duplicate detected: Ganesh Dhanshree (08147432017)
+2026-02-16 00:10:18,164 - WARNING - Validation error for data None: 1 validation error for BusinessLead
+business_name
+  Input should be a valid string [type=string_type, input_value=None, input_type=NoneType]
+    For further information visit https://errors.pydantic.dev/2.12/v/string_type
+2026-02-16 00:10:18,165 - INFO - Duplicate detected: Mumbai Painters (08147956097)
+2026-02-16 00:10:18,165 - INFO - Duplicate detected: Amjad Shaikh Plumber (09972306967)
+2026-02-16 00:10:18,165 - INFO - Duplicate detected: Spd Electrician (07485997339)
+2026-02-16 00:10:18,166 - INFO - Duplicate detected: K F Enterprises (08123567829)
+2026-02-16 00:10:18,167 - INFO - Duplicate detected: Rajeshkumar Enterprises (07795653479)
+2026-02-16 00:10:18,167 - INFO - Page 10: Found 21 items, Added 6 new. Total: 93
+2026-02-16 00:10:18,192 - INFO - Standard navigation failed. Attempting forced URL for page 11
+2026-02-16 00:10:18,192 - INFO - Force navigating to: https://www.justdial.com/Pune+Wakad/painter/page-11
+2026-02-16 00:10:25,278 - INFO - Scraping page 11 (Total collected: 93/150)
+2026-02-16 00:10:25,281 - INFO - Aggressive scrolling started... Aiming for ~150 items loaded in DOM
+2026-02-16 00:10:27,313 - INFO - Scroll iteration 0/30...
+2026-02-16 00:10:33,431 - INFO - Scroll stuck or reached bottom.
+2026-02-16 00:10:34,098 - INFO - Duplicate detected: Kansai Nerolac Paints Limited (09980861943)
+2026-02-16 00:10:34,098 - INFO - Duplicate detected: Khan Painting Contractor (08904960352)
+2026-02-16 00:10:34,099 - INFO - Duplicate detected: Tailorbird Interiors (09036614629)
+2026-02-16 00:10:34,099 - INFO - Duplicate detected: Universal Home Solution (08460504833)
+2026-02-16 00:10:34,099 - INFO - Duplicate detected: Sumeet Enterprises (08123040461)
+2026-02-16 00:10:34,100 - INFO - Duplicate detected: HS ProFix (09724406711)
+2026-02-16 00:10:34,100 - WARNING - Validation error for data None: 1 validation error for BusinessLead
+business_name
+  Input should be a valid string [type=string_type, input_value=None, input_type=NoneType]
+    For further information visit https://errors.pydantic.dev/2.12/v/string_type
+2026-02-16 00:10:34,100 - INFO - Duplicate detected: Mumbai Painters (08147956097)
+2026-02-16 00:10:34,100 - INFO - Duplicate detected: Amjad Shaikh Plumber (09972306967)
+2026-02-16 00:10:34,101 - INFO - Duplicate detected: The Home Decore (08460215391)
+2026-02-16 00:10:34,101 - INFO - Duplicate detected: Dharam Furniture Enterprises (08401947122)
+2026-02-16 00:10:34,101 - INFO - Duplicate detected: Singh Shab Enterprises (08460422307)
+2026-02-16 00:10:34,101 - INFO - Duplicate detected: K F Enterprises (08123567829)
+2026-02-16 00:10:34,102 - INFO - Duplicate detected: Painterwala (08401931256)
+2026-02-16 00:10:34,102 - INFO - Duplicate detected: Shine Painters (07490029793)
+2026-02-16 00:10:34,102 - INFO - Duplicate detected: Jitendra Painting and Furniture Polishing (08401228932)
+2026-02-16 00:10:34,102 - INFO - Page 11: Found 21 items, Added 5 new. Total: 98
+2026-02-16 00:10:34,138 - INFO - Standard navigation failed. Attempting forced URL for page 12
+2026-02-16 00:10:34,142 - INFO - Force navigating to: https://www.justdial.com/Pune+Wakad/painter/page-12
+2026-02-16 00:10:40,652 - INFO - Scraping page 12 (Total collected: 98/150)
+2026-02-16 00:10:40,653 - INFO - Aggressive scrolling started... Aiming for ~150 items loaded in DOM
+2026-02-16 00:10:42,711 - INFO - Scroll iteration 0/30...
+2026-02-16 00:10:48,959 - INFO - Scroll stuck or reached bottom.
+2026-02-16 00:10:49,549 - INFO - Duplicate detected: Kansai Nerolac Paints Limited (09980861943)
+2026-02-16 00:10:49,549 - INFO - Duplicate detected: Mohit Enterprises (09980762795)
+2026-02-16 00:10:49,550 - INFO - Duplicate detected: Sudhir Kadam Painting Contractor (08050223473)
+2026-02-16 00:10:49,550 - INFO - Duplicate detected: Shruti Construction (08460247240)
+2026-02-16 00:10:49,550 - INFO - Duplicate detected: Universal Home Solution (08460504833)
+2026-02-16 00:10:49,551 - INFO - Duplicate detected: S P Enterprises (09035143984)
+2026-02-16 00:10:49,551 - INFO - Duplicate detected: Om Facilities (09845224587)
+2026-02-16 00:10:49,552 - INFO - Duplicate detected: Spd Electrician (07485997339)
+2026-02-16 00:10:49,553 - INFO - Duplicate detected: Musheer Ali Enterprises (08460515454)
+2026-02-16 00:10:49,553 - WARNING - Validation error for data None: 1 validation error for BusinessLead
+business_name
+  Input should be a valid string [type=string_type, input_value=None, input_type=NoneType]
+    For further information visit https://errors.pydantic.dev/2.12/v/string_type
+2026-02-16 00:10:49,554 - INFO - Duplicate detected: Mumbai Painters (08147956097)
+2026-02-16 00:10:49,554 - INFO - Duplicate detected: Urbankucche Interior (07041310808)
+2026-02-16 00:10:49,555 - INFO - Duplicate detected: Urmila Interiors (08511899904)
+2026-02-16 00:10:49,556 - INFO - Duplicate detected: Singh Shab Enterprises (08460422307)
+2026-02-16 00:10:49,557 - INFO - Duplicate detected: K F Enterprises (08123567829)
+2026-02-16 00:10:49,557 - INFO - Duplicate detected: V K Painting Services (08105754153)
+2026-02-16 00:10:49,557 - INFO - Page 12: Found 21 items, Added 5 new. Total: 103
+2026-02-16 00:10:49,578 - INFO - Standard navigation failed. Attempting forced URL for page 13
+2026-02-16 00:10:49,579 - INFO - Force navigating to: https://www.justdial.com/Pune+Wakad/painter/page-13
+2026-02-16 00:10:55,732 - INFO - Scraping page 13 (Total collected: 103/150)
+2026-02-16 00:10:55,736 - INFO - Aggressive scrolling started... Aiming for ~150 items loaded in DOM
+2026-02-16 00:10:57,843 - INFO - Scroll iteration 0/30...
+2026-02-16 00:11:04,080 - INFO - Scroll stuck or reached bottom.
+2026-02-16 00:11:04,600 - INFO - Duplicate detected: Kansai Nerolac Paints Limited (09980861943)
+2026-02-16 00:11:04,600 - INFO - Duplicate detected: Satya Parkash Sharma (08460545726)
+2026-02-16 00:11:04,600 - INFO - Duplicate detected: Sudhir Kadam Painting Contractor (08050223473)
+2026-02-16 00:11:04,601 - INFO - Duplicate detected: Soni Enterprises (08904623018)
+2026-02-16 00:11:04,601 - INFO - Duplicate detected: Manoj Pednekar and Associates (08460224079)
+2026-02-16 00:11:04,601 - INFO - Duplicate detected: Civic Heights Contractors LLP (08511491965)
+2026-02-16 00:11:04,602 - INFO - Duplicate detected: Vijay Interior and Decorator (08123552962)
+2026-02-16 00:11:04,602 - INFO - Duplicate detected: Painterwala (08401931256)
+2026-02-16 00:11:04,602 - INFO - Duplicate detected: Musheer Ali Enterprises (08460515454)
+2026-02-16 00:11:04,603 - WARNING - Validation error for data None: 1 validation error for BusinessLead
+business_name
+  Input should be a valid string [type=string_type, input_value=None, input_type=NoneType]
+    For further information visit https://errors.pydantic.dev/2.12/v/string_type
+2026-02-16 00:11:04,603 - INFO - Duplicate detected: Creative Artss (09845224735)
+2026-02-16 00:11:04,604 - INFO - Duplicate detected: K F Enterprises (08123567829)
+2026-02-16 00:11:04,604 - INFO - Duplicate detected: Khan Painting Contractor (08904960352)
+2026-02-16 00:11:04,604 - INFO - Duplicate detected: Chandu Decor Arts (08128885728)
+2026-02-16 00:11:04,605 - INFO - Duplicate detected: Sevagiri Interiors (07041160849)
+2026-02-16 00:11:04,605 - INFO - Duplicate detected: Jai Maharashtra Painting Contractor (09054714604)
+2026-02-16 00:11:04,606 - INFO - Duplicate detected: Shine Painters (07490029793)
+2026-02-16 00:11:04,607 - INFO - Page 13: Found 21 items, Added 4 new. Total: 107
+2026-02-16 00:11:04,628 - INFO - Standard navigation failed. Attempting forced URL for page 14
+2026-02-16 00:11:04,628 - INFO - Force navigating to: https://www.justdial.com/Pune+Wakad/painter/page-14
+2026-02-16 00:11:11,162 - INFO - Scraping page 14 (Total collected: 107/150)
+2026-02-16 00:11:11,393 - INFO - Aggressive scrolling started... Aiming for ~150 items loaded in DOM
+2026-02-16 00:11:15,809 - INFO - Scroll iteration 0/30...
+2026-02-16 00:11:24,623 - INFO - Scroll stuck or reached bottom.
+2026-02-16 00:11:27,582 - INFO - Duplicate detected: Kansai Nerolac Paints Limited (09980861943)
+2026-02-16 00:11:27,583 - INFO - Duplicate detected: Sumeet Enterprises (08123040461)
+2026-02-16 00:11:27,584 - INFO - Duplicate detected: Smart Home Painter (09845451197)
+2026-02-16 00:11:27,584 - INFO - Duplicate detected: Khan Painting Contractor (08904960352)
+2026-02-16 00:11:27,586 - INFO - Duplicate detected: Tailorbird Interiors (09036614629)
+2026-02-16 00:11:27,586 - INFO - Duplicate detected: Universal Home Solution (08460504833)
+2026-02-16 00:11:27,586 - INFO - Duplicate detected: Jiya Enterprises (09845438814)
+2026-02-16 00:11:27,596 - WARNING - Validation error for data None: 1 validation error for BusinessLead
+business_name
+  Input should be a valid string [type=string_type, input_value=None, input_type=NoneType]
+    For further information visit https://errors.pydantic.dev/2.12/v/string_type
+2026-02-16 00:11:27,597 - INFO - Duplicate detected: Musheer Ali Enterprises (08460515454)
+2026-02-16 00:11:27,598 - INFO - Duplicate detected: Jay Prakash Jha Painting & Civil Contractor (09054057845)
+2026-02-16 00:11:27,599 - INFO - Duplicate detected: Mj Interiors (08123362301)
+2026-02-16 00:11:27,600 - INFO - Duplicate detected: Obaid Enterprises Cavil Engineering Pvt Ltd (08733037615)
+2026-02-16 00:11:27,601 - INFO - Duplicate detected: Jitendra Painting and Furniture Polishing (08401228932)
+2026-02-16 00:11:27,601 - INFO - Duplicate detected: Painterwala (08401931256)
+2026-02-16 00:11:27,604 - INFO - Duplicate detected: Ganesh Dhanshree (08147432017)
+2026-02-16 00:11:27,608 - INFO - Page 14: Found 21 items, Added 6 new. Total: 113
+2026-02-16 00:11:27,653 - INFO - Standard navigation failed. Attempting forced URL for page 15
+2026-02-16 00:11:27,653 - INFO - Force navigating to: https://www.justdial.com/Pune+Wakad/painter/page-15
+2026-02-16 00:11:37,594 - INFO - Scraping page 15 (Total collected: 113/150)
+2026-02-16 00:11:37,595 - INFO - Aggressive scrolling started... Aiming for ~150 items loaded in DOM
+2026-02-16 00:11:40,241 - INFO - Scroll iteration 0/30...
+2026-02-16 00:11:46,406 - INFO - Scroll stuck or reached bottom.
+2026-02-16 00:11:47,153 - INFO - Duplicate detected: Kansai Nerolac Paints Limited (09980861943)
+2026-02-16 00:11:47,154 - INFO - Duplicate detected: Musheer Ali Enterprises (08460515454)
+2026-02-16 00:11:47,154 - INFO - Duplicate detected: Khan Painting Contractor (08904960352)
+2026-02-16 00:11:47,155 - INFO - Duplicate detected: Sumeet Enterprises (08123040461)
+2026-02-16 00:11:47,155 - INFO - Duplicate detected: Creative Artss (09845224735)
+2026-02-16 00:11:47,156 - INFO - Duplicate detected: Painterwala (08401931256)
+2026-02-16 00:11:47,159 - INFO - Duplicate detected: Mumbai Painters (08147956097)
+2026-02-16 00:11:47,160 - INFO - Duplicate detected: Shine Painters (07490029793)
+2026-02-16 00:11:47,161 - WARNING - Validation error for data None: 1 validation error for BusinessLead
+business_name
+  Input should be a valid string [type=string_type, input_value=None, input_type=NoneType]
+    For further information visit https://errors.pydantic.dev/2.12/v/string_type
+2026-02-16 00:11:47,162 - INFO - Duplicate detected: BEST Painter In Mumbai (08460510535)
+2026-02-16 00:11:47,162 - INFO - Duplicate detected: Kartik Enterprises (09980695281)
+2026-02-16 00:11:47,163 - INFO - Duplicate detected: Tailorbird Interiors (09036614629)
+2026-02-16 00:11:47,163 - INFO - Duplicate detected: Mahalaxmi Enterprises (09054086023)
+2026-02-16 00:11:47,164 - INFO - Duplicate detected: Urmila Interiors (08511899904)
+2026-02-16 00:11:47,164 - INFO - Duplicate detected: Blueprint Dezyn (09980640358)
+2026-02-16 00:11:47,166 - INFO - Duplicate detected: Sudhir Kadam Painting Contractor (08050223473)
+2026-02-16 00:11:47,169 - INFO - Duplicate detected: Amjad Shaikh Plumber (09972306967)
+2026-02-16 00:11:47,170 - INFO - Duplicate detected: Bk Plumbing Services (09972201184)
+2026-02-16 00:11:47,171 - INFO - Page 15: Found 21 items, Added 3 new. Total: 116
+2026-02-16 00:11:47,207 - INFO - Standard navigation failed. Attempting forced URL for page 16
+2026-02-16 00:11:47,210 - INFO - Force navigating to: https://www.justdial.com/Pune+Wakad/painter/page-16
+2026-02-16 00:11:54,606 - INFO - Scraping page 16 (Total collected: 116/150)
+2026-02-16 00:11:54,608 - INFO - Aggressive scrolling started... Aiming for ~150 items loaded in DOM
+2026-02-16 00:12:01,750 - INFO - Scroll iteration 0/30...
+2026-02-16 00:12:11,879 - INFO - Scroll stuck or reached bottom.
+2026-02-16 00:12:12,703 - INFO - Duplicate detected: Kansai Nerolac Paints Limited (09980861943)
+2026-02-16 00:12:12,706 - INFO - Duplicate detected: Dharam Furniture Enterprises (08401947122)
+2026-02-16 00:12:12,706 - INFO - Duplicate detected: Satya Parkash Sharma (08460545726)
+2026-02-16 00:12:12,707 - INFO - Duplicate detected: Shruti Construction (08460247240)
+2026-02-16 00:12:12,707 - INFO - Duplicate detected: Sunil Painter (09054472980)
+2026-02-16 00:12:12,708 - INFO - Duplicate detected: Prakash Interior Contractor (08401328417)
+2026-02-16 00:12:12,709 - INFO - Duplicate detected: Manoj Pednekar and Associates (08460224079)
+2026-02-16 00:12:12,709 - INFO - Duplicate detected: Jan Seva Group (Turnkey Civil Project Contractors and Engineers) (09980703373)
+2026-02-16 00:12:12,710 - WARNING - Validation error for data None: 1 validation error for BusinessLead
+business_name
+  Input should be a valid string [type=string_type, input_value=None, input_type=NoneType]
+    For further information visit https://errors.pydantic.dev/2.12/v/string_type
+2026-02-16 00:12:12,711 - INFO - Duplicate detected: Dudhane Painting & Civil Work (08128272981)
+2026-02-16 00:12:12,712 - INFO - Duplicate detected: Singh Shab Enterprises (08460422307)
+2026-02-16 00:12:12,712 - INFO - Duplicate detected: Khan Painting Contractor (08904960352)
+2026-02-16 00:12:12,713 - INFO - Duplicate detected: Sonakshi Colours & Coatings (08050853101)
+2026-02-16 00:12:12,714 - INFO - Duplicate detected: Ram Interior (07487841770)
+2026-02-16 00:12:12,714 - INFO - Duplicate detected: Jiya Enterprises (09845438814)
+2026-02-16 00:12:12,715 - INFO - Duplicate detected: Universal Home Solution (08460504833)
+2026-02-16 00:12:12,716 - INFO - Duplicate detected: Musheer Ali Enterprises (08460515454)
+2026-02-16 00:12:12,716 - INFO - Page 16: Found 21 items, Added 4 new. Total: 120
+2026-02-16 00:12:12,762 - INFO - Standard navigation failed. Attempting forced URL for page 17
+2026-02-16 00:12:12,763 - INFO - Force navigating to: https://www.justdial.com/Pune+Wakad/painter/page-17
+2026-02-16 00:12:17,949 - INFO - Scraping page 17 (Total collected: 120/150)
+2026-02-16 00:12:17,950 - INFO - Aggressive scrolling started... Aiming for ~150 items loaded in DOM
+2026-02-16 00:12:20,398 - INFO - Scroll iteration 0/30...
+2026-02-16 00:12:26,549 - INFO - Scroll stuck or reached bottom.
+2026-02-16 00:12:27,245 - INFO - Duplicate detected: Kansai Nerolac Paints Limited (09980861943)
+2026-02-16 00:12:27,246 - INFO - Duplicate detected: Musheer Ali Enterprises (08460515454)
+2026-02-16 00:12:27,250 - INFO - Duplicate detected: Sudhir Kadam Painting Contractor (08050223473)
+2026-02-16 00:12:27,250 - INFO - Duplicate detected: Sumeet Enterprises (08123040461)
+2026-02-16 00:12:27,251 - INFO - Duplicate detected: Jitendra Painting and Furniture Polishing (08401228932)
+2026-02-16 00:12:27,252 - INFO - Duplicate detected: Rajeshkumar Enterprises (07795653479)
+2026-02-16 00:12:27,254 - INFO - Duplicate detected: K F Enterprises (08123567829)
+2026-02-16 00:12:27,255 - INFO - Duplicate detected: Shruti Construction (08460247240)
+2026-02-16 00:12:27,267 - INFO - Duplicate detected: Om Sai Enterprises (09972360893)
+2026-02-16 00:12:27,268 - WARNING - Validation error for data None: 1 validation error for BusinessLead
+business_name
+  Input should be a valid string [type=string_type, input_value=None, input_type=NoneType]
+    For further information visit https://errors.pydantic.dev/2.12/v/string_type
+2026-02-16 00:12:27,271 - INFO - Duplicate detected: Sai Raj Plumber Work and Civil Work (ITI Ncvt Plumber) (08511049756)
+2026-02-16 00:12:27,271 - INFO - Duplicate detected: Mj Interiors (08123362301)
+2026-02-16 00:12:27,272 - INFO - Duplicate detected: Krishna N Gaikwad (09845457920)
+2026-02-16 00:12:27,272 - INFO - Duplicate detected: Altaf Enterprises (09845460982)
+2026-02-16 00:12:27,275 - INFO - Duplicate detected: Khan Painting Contractor (08904960352)
+2026-02-16 00:12:27,282 - INFO - Duplicate detected: Jai Maharashtra Painting Contractor (09054714604)
+2026-02-16 00:12:27,283 - INFO - Duplicate detected: Creative Artss (09845224735)
+2026-02-16 00:12:27,286 - INFO - Duplicate detected: Bablu Contractor (09972443059)
+2026-02-16 00:12:27,287 - INFO - Duplicate detected: Universal Home Solution (08460504833)
+2026-02-16 00:12:27,289 - INFO - Page 17: Found 21 items, Added 2 new. Total: 122
+2026-02-16 00:12:27,338 - INFO - Standard navigation failed. Attempting forced URL for page 18
+2026-02-16 00:12:27,338 - INFO - Force navigating to: https://www.justdial.com/Pune+Wakad/painter/page-18
+2026-02-16 00:12:34,026 - INFO - Scraping page 18 (Total collected: 122/150)
+2026-02-16 00:12:34,026 - INFO - Aggressive scrolling started... Aiming for ~150 items loaded in DOM
+2026-02-16 00:12:36,207 - INFO - Scroll iteration 0/30...
+2026-02-16 00:12:42,470 - INFO - Scroll stuck or reached bottom.
+2026-02-16 00:12:43,024 - INFO - Duplicate detected: Kansai Nerolac Paints Limited (09980861943)
+2026-02-16 00:12:43,024 - INFO - Duplicate detected: Khan Painting Contractor (08904960352)
+2026-02-16 00:12:43,024 - INFO - Duplicate detected: Jai Maa Bhavani Plumbing (09845442107)
+2026-02-16 00:12:43,025 - INFO - Duplicate detected: Shreeji Enterprises (08401876217)
+2026-02-16 00:12:43,025 - INFO - Duplicate detected: Dharam Furniture Enterprises (08401947122)
+2026-02-16 00:12:43,025 - INFO - Duplicate detected: Sudhir Kadam Painting Contractor (08050223473)
+2026-02-16 00:12:43,026 - INFO - Duplicate detected: Mahalaxmi Enterprises (09054086023)
+2026-02-16 00:12:43,026 - INFO - Duplicate detected: Manoj Pednekar and Associates (08460224079)
+2026-02-16 00:12:43,026 - INFO - Duplicate detected: Musheer Ali Enterprises (08460515454)
+2026-02-16 00:12:43,026 - WARNING - Validation error for data None: 1 validation error for BusinessLead
+business_name
+  Input should be a valid string [type=string_type, input_value=None, input_type=NoneType]
+    For further information visit https://errors.pydantic.dev/2.12/v/string_type
+2026-02-16 00:12:43,027 - INFO - Duplicate detected: Jitendra Painting and Furniture Polishing (08401228932)
+2026-02-16 00:12:43,027 - INFO - Duplicate detected: Ganesh Dhanshree (08147432017)
+2026-02-16 00:12:43,027 - INFO - Duplicate detected: Sumeet Enterprises (08123040461)
+2026-02-16 00:12:43,028 - INFO - Duplicate detected: Sai Raj Plumber Work and Civil Work (ITI Ncvt Plumber) (08511049756)
+2026-02-16 00:12:43,028 - INFO - Duplicate detected: Tailorbird Interiors (09036614629)
+2026-02-16 00:12:43,028 - INFO - Duplicate detected: Shine Painters (07490029793)
+2026-02-16 00:12:43,028 - INFO - Duplicate detected: Jai Maharashtra Painting Contractor (09054714604)
+2026-02-16 00:12:43,028 - INFO - Duplicate detected: Sonakshi Colours & Coatings (08050853101)
+2026-02-16 00:12:43,029 - INFO - Duplicate detected: Blueprint Dezyn (09980640358)
+2026-02-16 00:12:43,029 - INFO - Page 18: Found 21 items, Added 2 new. Total: 124
+2026-02-16 00:12:43,053 - INFO - Standard navigation failed. Attempting forced URL for page 19
+2026-02-16 00:12:43,053 - INFO - Force navigating to: https://www.justdial.com/Pune+Wakad/painter/page-19
+2026-02-16 00:12:48,671 - INFO - Scraping page 19 (Total collected: 124/150)
+2026-02-16 00:12:48,671 - INFO - Aggressive scrolling started... Aiming for ~150 items loaded in DOM
+2026-02-16 00:12:50,706 - INFO - Scroll iteration 0/30...
+2026-02-16 00:12:56,912 - INFO - Scroll stuck or reached bottom.
+2026-02-16 00:12:57,737 - INFO - Duplicate detected: Sumeet Enterprises (08123040461)
+2026-02-16 00:12:57,737 - INFO - Duplicate detected: Kansai Nerolac Paints Limited (09980861943)
+2026-02-16 00:12:57,737 - INFO - Duplicate detected: Dharam Furniture Enterprises (08401947122)
+2026-02-16 00:12:57,738 - INFO - Duplicate detected: Sudhir Kadam Painting Contractor (08050223473)
+2026-02-16 00:12:57,738 - INFO - Duplicate detected: Tailorbird Interiors (09036614629)
+2026-02-16 00:12:57,739 - INFO - Duplicate detected: Khan Painting Contractor (08904960352)
+2026-02-16 00:12:57,739 - INFO - Duplicate detected: Rajeshkumar Enterprises (07795653479)
+2026-02-16 00:12:57,739 - INFO - Duplicate detected: Sevagiri Interiors (07041160849)
+2026-02-16 00:12:57,740 - WARNING - Validation error for data None: 1 validation error for BusinessLead
+business_name
+  Input should be a valid string [type=string_type, input_value=None, input_type=NoneType]
+    For further information visit https://errors.pydantic.dev/2.12/v/string_type
+2026-02-16 00:12:57,740 - INFO - Duplicate detected: Musheer Ali Enterprises (08460515454)
+2026-02-16 00:12:57,741 - INFO - Duplicate detected: Nabi Painter (08487936891)
+2026-02-16 00:12:57,741 - INFO - Duplicate detected: Vedika Enterprise (08105466682)
+2026-02-16 00:12:57,741 - INFO - Duplicate detected: Creative Artss (09845224735)
+2026-02-16 00:12:57,742 - INFO - Duplicate detected: Krishna N Gaikwad (09845457920)
+2026-02-16 00:12:57,742 - INFO - Duplicate detected: Priya Enterprises (09845477134)
+2026-02-16 00:12:57,743 - INFO - Duplicate detected: Ganesh Dhanshree (08147432017)
+2026-02-16 00:12:57,743 - INFO - Duplicate detected: Rajnikant Enterprises (09725864800)
+2026-02-16 00:12:57,744 - INFO - Page 19: Found 21 items, Added 4 new. Total: 128
+2026-02-16 00:12:57,772 - INFO - Standard navigation failed. Attempting forced URL for page 20
+2026-02-16 00:12:57,772 - INFO - Force navigating to: https://www.justdial.com/Pune+Wakad/painter/page-20
+2026-02-16 00:13:04,920 - INFO - Scraping page 20 (Total collected: 128/150)
+2026-02-16 00:13:04,920 - INFO - Aggressive scrolling started... Aiming for ~150 items loaded in DOM
+2026-02-16 00:13:06,962 - INFO - Scroll iteration 0/30...
+2026-02-16 00:13:10,380 - INFO - Saved 128 records to C:\Users\Nayan\OneDrive\Documents\scrapper\output\leads_data.csv
+2026-02-16 00:13:11,483 - CRITICAL - Fatal error: Browser.close: Connection closed while reading from the driver
+Traceback (most recent call last):
+  File "C:\Users\Nayan\OneDrive\Documents\scrapper\main.py", line 31, in main
+    asyncio.run(scraper.run())
+    ~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Users\Nayan\AppData\Local\Programs\Python\Python314\Lib\asyncio\runners.py", line 204, in run
+    return runner.run(main)
+           ~~~~~~~~~~^^^^^^
+  File "C:\Users\Nayan\AppData\Local\Programs\Python\Python314\Lib\asyncio\runners.py", line 127, in run
+    return self._loop.run_until_complete(task)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\Nayan\AppData\Local\Programs\Python\Python314\Lib\asyncio\base_events.py", line 719, in run_until_complete
+    return future.result()
+           ~~~~~~~~~~~~~^^
+  File "C:\Users\Nayan\OneDrive\Documents\scrapper\src\scraper.py", line 184, in run
+    await browser.close()
+  File "C:\Users\Nayan\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\async_api\_generated.py", line 14322, in close
+    return mapping.from_maybe_impl(await self._impl_obj.close(reason=reason))
+                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Nayan\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_browser.py", line 241, in close
+    raise e
+  File "C:\Users\Nayan\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_browser.py", line 238, in close
+    await self._channel.send("close", None, {"reason": reason})
+  File "C:\Users\Nayan\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_connection.py", line 69, in send
+    return await self._connection.wrap_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "C:\Users\Nayan\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_connection.py", line 559, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+Exception: Browser.close: Connection closed while reading from the driver

@@ -1,0 +1,23 @@
+# Global Scraper Settings
+
+scraper:
+  target_url: "https://example.com/directory"  # Replace with actual URL
+  max_pages: 50
+  target_records: 150  # Aim for 150 to ensure 100 good ones after dedup
+  headless: true
+  timeout: 60000  # ms
+  user_agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36"
+  proxy: null
+  
+output:
+  format: "csv"  # csv, json, excel
+  filename: "leads_data"
+  directory: "output"
+
+logging:
+  level: "INFO"
+  file: "logs/scraper.log"
+  
+processing:
+  deduplicate: true
+  clean_phone: true

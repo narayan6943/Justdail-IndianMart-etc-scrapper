@@ -1,0 +1,4 @@
+﻿business_name,phone,address,city,area,website,email,rating,reviews,category,source_url,date_collected,has_website
+Tech Solutions Inc.,+919876543210,"123 Tech Park, Bangalore",,,https://techsolutions.example.com,,4.5,120,,file:///C:/Users/Nayan/OneDrive/Documents/scrapper/tests/mock_page_1.html,2026-02-15T19:26:10.286356,True
+Bloom Flowers,02212345678,"45 Flower St, Mumbai",,,,,4.0,50,,file:///C:/Users/Nayan/OneDrive/Documents/scrapper/tests/mock_page_1.html,2026-02-15T19:26:10.296178,False
+NextGen Motors,+15550199,"Delhi Road, Delhi",,,https://nextgen.example.com,,3.8,20,,file:///C:/Users/Nayan/OneDrive/Documents/scrapper/tests/mock_page_2.html,2026-02-15T19:26:16.577944,True

@@ -1,0 +1,8 @@
+playwright
+beautifulsoup4
+pandas
+pydantic
+pyyaml
+openpyxl
+phonenumbers
+fake-useragent

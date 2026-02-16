@@ -1,0 +1,22 @@
+# Test Settings using local mock files
+
+scraper:
+  target_url: "file://{cwd}/tests/mock_page_1.html"  # Placeholder, will be updated in test script
+  max_pages: 2
+  headless: true
+  timeout: 5000
+  user_agent: "TestBot"
+  proxy: null
+  
+output:
+  format: "csv,json"
+  filename: "test_output"
+  directory: "tests/output"
+
+logging:
+  level: "DEBUG"
+  file: "tests/logs/test_scraper.log"
+  
+processing:
+  deduplicate: true
+  clean_phone: true
