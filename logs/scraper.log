@@ -1485,3 +1485,110 @@ Traceback (most recent call last):
   File "C:\Users\Nayan\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_connection.py", line 559, in wrap_api_call
     raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
 Exception: Browser.close: Connection closed while reading from the driver
+2026-02-18 23:13:18,456 - INFO - Starting Web Scraper for indiamart...
+2026-02-18 23:13:18,464 - INFO - Storage initialized at: C:\Users\Nayan\OneDrive\Documents\scrapper\output\floor_cleaner_pune
+2026-02-18 23:13:21,893 - INFO - Navigating to https://dir.indiamart.com/search.mp?ss=floor+cleaner&city=pune (Platform: indiamart)
+2026-02-18 23:13:26,881 - INFO - Scraping page 1 (Total collected: 0/150)
+2026-02-18 23:13:26,882 - INFO - Aggressive scrolling started... Aiming for ~150 items loaded in DOM
+2026-02-18 23:13:28,960 - INFO - Scroll iteration 0/30...
+2026-02-18 23:13:37,297 - INFO - Scroll stuck or reached bottom.
+2026-02-18 23:13:37,554 - INFO - Page 1: Found 0 items, Added 0 new. Total: 0
+2026-02-18 23:13:37,555 - WARNING - Page 1 yielded 0 items. Dumping HTML for inspection.
+2026-02-18 23:13:37,604 - INFO - No next page button found and no fallback available.
+2026-02-18 23:13:37,608 - WARNING - No data to save.
+2026-02-18 23:13:38,391 - INFO - Scraping completed successfully.
+2026-02-18 23:16:37,150 - INFO - Starting Web Scraper for indiamart...
+2026-02-18 23:16:37,151 - INFO - Storage initialized at: C:\Users\Nayan\OneDrive\Documents\scrapper\output\floor_cleaner_pune
+2026-02-18 23:16:39,592 - INFO - Navigating to https://dir.indiamart.com/search.mp?ss=floor+cleaner&city=pune (Platform: indiamart)
+2026-02-18 23:16:44,492 - INFO - Scraping page 1 (Total collected: 0/150)
+2026-02-18 23:16:44,492 - INFO - Aggressive scrolling... Aiming for ~150 items
+2026-02-18 23:16:47,441 - INFO - Scroll cycle 0/25... Current page height: 3907
+2026-02-18 23:16:55,665 - INFO - Height stable but target not met. Waiting a bit longer...
+2026-02-18 23:17:03,843 - INFO - Scroll cycle 5/25... Current page height: 3907
+2026-02-18 23:17:06,426 - INFO - Height stable but target not met. Waiting a bit longer...
+2026-02-18 23:17:18,094 - INFO - Height stable but target not met. Waiting a bit longer...
+2026-02-18 23:17:24,092 - INFO - Scroll cycle 10/25... Current page height: 3907
+2026-02-18 23:17:29,984 - INFO - Height stable but target not met. Waiting a bit longer...
+2026-02-18 23:17:41,623 - INFO - Height stable but target not met. Waiting a bit longer...
+2026-02-18 23:17:44,629 - INFO - Scroll cycle 15/25... Current page height: 3907
+2026-02-18 23:17:53,154 - INFO - Height stable but target not met. Waiting a bit longer...
+2026-02-18 23:18:01,579 - INFO - Scroll cycle 20/25... Current page height: 3907
+2026-02-18 23:18:03,563 - WARNING - No data to save.
+2026-02-18 23:18:04,662 - CRITICAL - Fatal error: Browser.close: Connection closed while reading from the driver
+Traceback (most recent call last):
+  File "C:\Users\Nayan\OneDrive\Documents\scrapper\main.py", line 30, in main
+    asyncio.run(scraper.run())
+    ~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Users\Nayan\AppData\Local\Programs\Python\Python314\Lib\asyncio\runners.py", line 204, in run
+    return runner.run(main)
+           ~~~~~~~~~~^^^^^^
+  File "C:\Users\Nayan\AppData\Local\Programs\Python\Python314\Lib\asyncio\runners.py", line 127, in run
+    return self._loop.run_until_complete(task)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\Nayan\AppData\Local\Programs\Python\Python314\Lib\asyncio\base_events.py", line 719, in run_until_complete
+    return future.result()
+           ~~~~~~~~~~~~~^^
+  File "C:\Users\Nayan\OneDrive\Documents\scrapper\src\scraper.py", line 207, in run
+    await browser.close()
+  File "C:\Users\Nayan\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\async_api\_generated.py", line 14322, in close
+    return mapping.from_maybe_impl(await self._impl_obj.close(reason=reason))
+                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Nayan\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_browser.py", line 241, in close
+    raise e
+  File "C:\Users\Nayan\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_browser.py", line 238, in close
+    await self._channel.send("close", None, {"reason": reason})
+  File "C:\Users\Nayan\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_connection.py", line 69, in send
+    return await self._connection.wrap_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "C:\Users\Nayan\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_connection.py", line 559, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+Exception: Browser.close: Connection closed while reading from the driver
+2026-02-18 23:21:07,585 - INFO - Starting Web Scraper for indiamart...
+2026-02-18 23:21:07,586 - INFO - Storage initialized at: C:\Users\Nayan\OneDrive\Documents\scrapper\output\floor_cleaner_pune
+2026-02-18 23:21:10,614 - INFO - Navigating to https://dir.indiamart.com/search.mp?ss=floor+cleaner&city=pune (Platform: indiamart)
+2026-02-18 23:21:20,555 - INFO - Scraping page 1 (Total collected: 0/150)
+2026-02-18 23:21:20,579 - INFO - Aggressive scrolling... Aiming for ~150 items
+2026-02-18 23:21:23,720 - INFO - Scroll cycle 0/25... Current page height: 3907
+2026-02-18 23:21:30,959 - INFO - Height stable but target not met. Waiting a bit longer...
+2026-02-18 23:21:39,378 - INFO - Scroll cycle 5/25... Current page height: 3907
+2026-02-18 23:21:41,767 - INFO - Height stable but target not met. Waiting a bit longer...
+2026-02-18 23:21:52,703 - INFO - Height stable but target not met. Waiting a bit longer...
+2026-02-18 23:21:57,966 - INFO - Scroll cycle 10/25... Current page height: 3907
+2026-02-18 23:22:03,367 - INFO - Height stable but target not met. Waiting a bit longer...
+2026-02-18 23:22:14,921 - INFO - Height stable but target not met. Waiting a bit longer...
+2026-02-18 23:22:17,923 - INFO - Scroll cycle 15/25... Current page height: 3907
+2026-02-18 23:22:25,858 - INFO - Height stable but target not met. Waiting a bit longer...
+2026-02-18 23:22:33,133 - INFO - Scroll cycle 20/25... Current page height: 3907
+2026-02-18 23:22:35,872 - INFO - Height stable but target not met. Waiting a bit longer...
+2026-02-18 23:22:46,729 - INFO - Height stable but target not met. Waiting a bit longer...
+2026-02-18 23:22:50,076 - INFO - Page 1: Found 20 items, Added 20 new. Total: 20
+2026-02-18 23:22:50,086 - INFO - No next page button found and no fallback available.
+2026-02-18 23:22:50,103 - INFO - Saved 20 records to C:\Users\Nayan\OneDrive\Documents\scrapper\output\floor_cleaner_pune\leads_data_20260218_232250.csv
+2026-02-18 23:22:50,824 - INFO - Scraping completed successfully.
+2026-02-18 23:23:36,653 - INFO - Starting Web Scraper for indiamart...
+2026-02-18 23:23:36,654 - INFO - Storage initialized at: C:\Users\Nayan\OneDrive\Documents\scrapper\output\pen_pune
+2026-02-18 23:23:38,891 - INFO - Navigating to https://dir.indiamart.com/search.mp?ss=pen&city=pune (Platform: indiamart)
+2026-02-18 23:23:45,436 - INFO - Scraping page 1 (Total collected: 0/150)
+2026-02-18 23:23:45,459 - INFO - Aggressive scrolling... Aiming for ~150 items
+2026-02-18 23:23:47,621 - INFO - Scroll cycle 0/25... Current page height: 4524
+2026-02-18 23:23:52,873 - INFO - Height stable but target not met. Waiting a bit longer...
+2026-02-18 23:24:03,865 - INFO - Height stable but target not met. Waiting a bit longer...
+2026-02-18 23:24:06,883 - INFO - Scroll cycle 5/25... Current page height: 4524
+2026-02-18 23:24:14,464 - INFO - Height stable but target not met. Waiting a bit longer...
+2026-02-18 23:24:22,179 - INFO - Scroll cycle 10/25... Current page height: 4524
+2026-02-18 23:24:24,885 - INFO - Height stable but target not met. Waiting a bit longer...
+2026-02-18 23:24:35,680 - INFO - Height stable but target not met. Waiting a bit longer...
+2026-02-18 23:24:41,299 - INFO - Scroll cycle 15/25... Current page height: 4524
+2026-02-18 23:24:46,106 - INFO - Height stable but target not met. Waiting a bit longer...
+2026-02-18 23:24:56,271 - INFO - Height stable but target not met. Waiting a bit longer...
+2026-02-18 23:24:59,273 - INFO - Scroll cycle 20/25... Current page height: 4524
+2026-02-18 23:25:06,755 - INFO - Height stable but target not met. Waiting a bit longer...
+2026-02-18 23:25:12,610 - INFO - Page 1: Found 20 items, Added 20 new. Total: 20
+2026-02-18 23:25:12,618 - INFO - No next page button found and no fallback available.
+2026-02-18 23:25:12,625 - INFO - Saved 20 records to C:\Users\Nayan\OneDrive\Documents\scrapper\output\pen_pune\leads_data_20260218_232512.csv
+2026-02-18 23:25:12,626 - INFO - State preserved successfully.
+2026-02-18 23:25:13,404 - INFO - Browser closed safely.
+2026-02-18 23:25:13,425 - INFO - Scraping completed successfully.

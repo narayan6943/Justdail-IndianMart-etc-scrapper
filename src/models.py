@@ -4,6 +4,7 @@ import re
 
 class BusinessLead(BaseModel):
     business_name: str
+    product_name: Optional[str] = None
     phone: Optional[str] = None
     address: Optional[str] = None
     city: Optional[str] = None

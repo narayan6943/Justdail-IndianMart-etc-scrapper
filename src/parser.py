@@ -77,6 +77,18 @@ class HTMLParser:
                     value = element.get(attr)
             
             data[field] = value
+        
+        # Fallback for business_name if it's missing but product_name exists
+        if not data.get('business_name') and data.get('product_name'):
+            data['business_name'] = data['product_name']
+        elif not data.get('business_name'):
+            # Final fallback to first link text if nothing found
+            first_link = tag.find('a')
+            if first_link:
+                data['business_name'] = first_link.get_text(strip=True)
+            else:
+                data['business_name'] = "Unnamed Business"
+                
         return data
 
     def has_next_page(self, page_html):

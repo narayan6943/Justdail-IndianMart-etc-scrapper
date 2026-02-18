@@ -30,20 +30,20 @@ platforms:
 
   indiamart:
     url_pattern: "https://dir.indiamart.com/search.mp?ss={query}&city={location}"
-    listing_container: ".lst_cl, .m-p-l"
-    next_button: "a.next"
+    listing_container: ".card, div[id^='LST'], .lst_cl"
+    next_button: "a.next, .next-page, .prevNext"
     fields:
       business_name:
-        selector: ".company-name, .lg"
+        selector: ".companyname a, .company-name, .lg"
         type: "text"
       phone:
-        selector: ".pns_h, .du-call" # Often requires clicking "View Number" or "Call Now"
+        selector: ".pns_h, .duet, .du-call, [data-no]"
         type: "text"
       address:
-        selector: ".address, .clg"
+        selector: ".newLocationUi, .address, .clg"
         type: "text"
-      rating:
-        selector: ".rating" # Less common on IM listings page
+      product_name:
+        selector: ".producttitle a"
         type: "text"
       website:
         selector: "a.website-link"

@@ -11,6 +11,10 @@ import random
 
 class ScraperEngine:
     def __init__(self, platform='custom', location=None, query=None):
+        self.platform = platform
+        self.location = location
+        self.query = query
+        
         # Construct search term for dynamic folder naming
         search_term = "custom_run"
         if query and location:
@@ -22,7 +26,6 @@ class ScraperEngine:
 
         self.pipeline = DataPipeline()
         self.storage = StorageManager(search_term=search_term)
-        self.platform = platform
         
         if platform == 'custom':
             self.start_url = config.settings['scraper']['target_url']
@@ -106,18 +109,42 @@ class ScraperEngine:
             
             try:
                 logger.info(f"Navigating to {self.start_url} (Platform: {self.platform})")
-                await page.goto(self.start_url, timeout=60000, wait_until='domcontentloaded')
-                await asyncio.sleep(random.uniform(3, 6)) # Human delay
+                try:
+                    await page.goto(self.start_url, timeout=90000, wait_until='load')
+                except Exception as e:
+                    logger.warning(f"Initial navigation warning (continuing anyway): {e}")
                 
+                await asyncio.sleep(random.uniform(5, 8)) # Give extra time for JS hydration
+                
+                # Check for "Select City" popups or overlays which are common on IndiaMART/Justdial
+                try:
+                    for popup_selector in ['.city-pop', '.modal-close', '#close_location_popup']:
+                        if await page.is_visible(popup_selector):
+                            await page.click(popup_selector)
+                            await asyncio.sleep(1)
+                except:
+                    pass
+
                 total_scraped = 0
                 target = config.target_records
                 
                 while current_page <= max_pages and total_scraped < target:
+                    # Check if browser is still connected
+                    if not browser.is_connected():
+                        logger.error("Browser connection lost.")
+                        break
+
                     logger.info(f"Scraping page {current_page} (Total collected: {total_scraped}/{target})")
                     
+                    # Wait for at least one listing to appear before starting
+                    try:
+                        container_sel = self.selectors.get('listing_container', '.card').split(',')[0].strip()
+                        await page.wait_for_selector(container_sel, timeout=15000)
+                    except:
+                        logger.warning("Timeout waiting for listing containers. Site might be slow or blocked.")
+
                     # Specialized behavior for infinite scroll sites
                     if self.platform in ['justdial', 'indiamart']:
-                        # Pass user intent to scroll method
                         await self._aggressive_scroll(page, target=target)
                     
                     # Parse Content
@@ -129,8 +156,16 @@ class ScraperEngine:
                         metadata = {
                             "source_url": page.url,
                             "date_collected": datetime.now().isoformat(),
-                            "has_website": bool(item.get('website'))
+                            "has_website": bool(item.get('website')),
+                            "city": getattr(self, 'location', 'N/A'),
+                            "category": getattr(self, 'query', 'N/A')
                         }
+                        # Merge location/query if they were passed
+                        if hasattr(self, 'location') and not item.get('city'):
+                            item['city'] = self.location
+                        if hasattr(self, 'query') and not item.get('category'):
+                            item['category'] = self.query
+
                         PROCESSED_DATA = self.pipeline.process(item, metadata)
                         if PROCESSED_DATA:
                             self.storage.add_record(PROCESSED_DATA)
@@ -187,30 +222,39 @@ class ScraperEngine:
                         break
                         
             except Exception as e:
-                logger.error(f"Scraping failed: {e}")
+                logger.error(f"Fatal error during scraping: {e}")
+                # Log traceback for expert debugging
+                import traceback
+                logger.error(traceback.format_exc())
             finally:
-                self.storage.save()
-                await browser.close()
+                # Expert mode: Force save before browser close
+                try:
+                    self.storage.save()
+                    logger.info("State preserved successfully.")
+                except Exception as save_err:
+                    logger.error(f"Critical error saving state: {save_err}")
+                
+                try:
+                    if 'browser' in locals() and browser:
+                        await browser.close()
+                    logger.info("Browser closed safely.")
+                except:
+                    pass
 
     async def _aggressive_scroll(self, page, target=100):
-        """Scrolls aggressively to trigger lazy loading until target roughly met or timeout."""
-        logger.info(f"Aggressive scrolling started... Aiming for ~{target} items loaded in DOM")
+        """Scrolls progressively to trigger lazy loading."""
+        logger.info(f"Aggressive scrolling... Aiming for ~{target} items")
         
-        previous_height = 0
+        previous_height = await page.evaluate("document.body.scrollHeight")
         no_change_count = 0
         
-        # Heuristic: assume 1 listing ~ 100-200px height. 
-        # Scroll down repeatedly.
-        
-        for i in range(30): # Max 30 aggressive scrolls per 'page' logic
-            current_height = await page.evaluate("document.body.scrollHeight")
-            
-            # Fast scroll to bottom
+        for i in range(25): # Max 25 scroll cycles
+            # Scroll to current bottom
             await page.evaluate("window.scrollTo(0, document.body.scrollHeight)")
-            await asyncio.sleep(1.5) # Allow network to fetch
+            await asyncio.sleep(random.uniform(1.5, 2.5))
             
-            # Sometimes scroll up slightly to trigger listeners
-            await page.evaluate("window.scrollBy(0, -500)")
+            # Scroll up slightly to trigger "above fold" loaders
+            await page.evaluate("window.scrollBy(0, -800)")
             await asyncio.sleep(0.5)
             await page.evaluate("window.scrollTo(0, document.body.scrollHeight)")
             
@@ -219,19 +263,18 @@ class ScraperEngine:
             if new_height == previous_height:
                 no_change_count += 1
                 if no_change_count >= 3:
-                     logger.info("Scroll stuck or reached bottom.")
-                     break
+                     # Check if we still need more items by counting containers
+                     cards = await page.query_selector_all(self.selectors.get('listing_container', '.card'))
+                     if len(cards) >= target * 0.8: # Close enough
+                         logger.info(f"Loaded {len(cards)} items. Stopping scroll.")
+                         break
+                     else:
+                         logger.info("Height stable but target not met. Waiting a bit longer...")
+                         await asyncio.sleep(3)
+                         no_change_count = 0 # Reset to try again
             else:
                 no_change_count = 0
                 
             previous_height = new_height
-            
-            # Quick check on item count in DOM (rough)
-            # This requires knowing the item selector. We can guess roughly or just rely on height.
-            # Let's just rely on the loop for now. 30 scrolls * 1.5s = 45s max scroll time per 'page'.
-            
             if i % 5 == 0:
-                logger.info(f"Scroll iteration {i}/30...")
-                
-            # If we detect we have LOTS of content, maybe break early?
-            # Ideally we parse in real-time but that's expensive inside this loop.
+                logger.info(f"Scroll cycle {i}/25... Current page height: {new_height}")
