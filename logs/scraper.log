@@ -1592,3 +1592,17 @@ Exception: Browser.close: Connection closed while reading from the driver
 2026-02-18 23:25:12,626 - INFO - State preserved successfully.
 2026-02-18 23:25:13,404 - INFO - Browser closed safely.
 2026-02-18 23:25:13,425 - INFO - Scraping completed successfully.
+2026-02-19 00:48:57,831 - INFO - Starting Web Scraper for justdial...
+2026-02-19 00:48:57,839 - INFO - Storage initialized at: C:\Users\Nayan\OneDrive\Documents\scrapper\output\lawyer_dehli
+2026-02-19 00:49:00,921 - INFO - Navigating to https://www.justdial.com/dehli/lawyer (Platform: justdial)
+2026-02-19 00:49:12,122 - INFO - Scraping page 1 (Total collected: 0/150)
+2026-02-19 00:49:12,152 - INFO - Aggressive scrolling... Aiming for ~150 items
+2026-02-19 00:49:14,911 - INFO - Scroll cycle 0/25... Current page height: 9705
+2026-02-19 00:49:22,498 - INFO - Height stable but target not met. Waiting a bit longer...
+2026-02-19 00:49:30,691 - INFO - Scroll cycle 5/25... Current page height: 9705
+2026-02-19 00:49:33,680 - INFO - Height stable but target not met. Waiting a bit longer...
+2026-02-19 00:49:43,902 - INFO - Height stable but target not met. Waiting a bit longer...
+2026-02-19 00:49:49,784 - INFO - Scroll cycle 10/25... Current page height: 12245
+2026-02-19 00:49:52,621 - WARNING - No data to save.
+2026-02-19 00:49:52,622 - INFO - State preserved successfully.
+2026-02-19 00:49:53,271 - INFO - Scraping interrupted by user.
