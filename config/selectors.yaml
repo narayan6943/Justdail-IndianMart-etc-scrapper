@@ -5,26 +5,26 @@
 platforms:
   justdial:
     url_pattern: "https://www.justdial.com/{location}/{query}"
-    listing_container: ".resultbox, .cntanr"  # Tries to match either
-    next_button: "a[rel='next']"
+    listing_container: ".resultbox, .cntanr, .cnt_details, div[id^='result']"
+    next_button: "a[rel='next'], .next"
     fields:
       business_name:
-        selector: ".resultbox_title_anchor, .store-name"
+        selector: ".resultbox_title_anchor, .store-name, .cnt_ttlv, .lng_cont_name"
         type: "text"
       phone:
-        selector: ".contact-info, .mobilesv, .callcontent"
+        selector: ".contact-info, .mobilesv, .callcontent, .lng_add_ph"
         type: "text"
       address:
-        selector: ".address-info, .cont_fl_addr"
+        selector: ".address, .cont_fl_addr, .lng_add, .address-info"
         type: "text"
       rating:
-        selector: ".resultbox_totalrate, .green-box"
+        selector: ".green-box, .rating-orbit, .resultbox_totalrate"
         type: "text"
       reviews:
-        selector: ".resultbox_countrate, .total-review"
+        selector: ".total-review, .resultbox_countrate"
         type: "text"
       website:
-        selector: ".web_ic, a[target='_blank']" # Generic fallback
+        selector: ".web_ic, a[target='_blank']"
         type: "attribute"
         attribute: "href"
 

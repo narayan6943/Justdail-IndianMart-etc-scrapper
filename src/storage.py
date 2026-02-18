@@ -11,20 +11,18 @@ class StorageManager:
     def __init__(self, search_term="default"):
         self.data = []
         
-        # Clean the search term for use as a folder name (replace spaces and special chars)
+        # Clean the search term for use in filenames
         self.search_tag = "".join(c if c.isalnum() or c in ('-', '_') else '_' for c in search_term).lower()
         
-        # Dynamic Output Directory: output/search_term/
-        self.output_dir = config.output_dir / self.search_tag
+        # Save directly to the base output directory
+        self.output_dir = config.output_dir
         
-        # Ensure directories are created safely without wiping content
+        # Ensure base directory exists
         try:
             self.output_dir.mkdir(parents=True, exist_ok=True)
             logger.info(f"Storage initialized at: {self.output_dir}")
         except Exception as e:
-            logger.error(f"Failed to create output directory {self.output_dir}: {e}")
-            # Fallback to base output dir if subfolder creation fails
-            self.output_dir = config.output_dir
+            logger.error(f"Failed to ensure output directory {self.output_dir}: {e}")
 
         self.base_filename = config.settings['output'].get('filename', 'leads_data')
         self.formats = config.settings['output'].get('format', 'csv').split(',')
@@ -38,9 +36,9 @@ class StorageManager:
             logger.warning("No data to save.")
             return
 
-        # Generate unique filename with timestamp: leads_data_20240218_231000
+        # Prefix filename with search tag to keep files identifiable in the base folder
         timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
-        final_filename = f"{self.base_filename}_{timestamp}"
+        final_filename = f"{self.search_tag}_{self.base_filename}_{timestamp}"
         
         df = pd.DataFrame(self.data)
         

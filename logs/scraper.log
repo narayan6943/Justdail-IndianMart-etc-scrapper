@@ -1606,3 +1606,132 @@ Exception: Browser.close: Connection closed while reading from the driver
 2026-02-19 00:49:52,621 - WARNING - No data to save.
 2026-02-19 00:49:52,622 - INFO - State preserved successfully.
 2026-02-19 00:49:53,271 - INFO - Scraping interrupted by user.
+2026-02-19 00:54:53,561 - INFO - Starting Web Scraper for indiamart...
+2026-02-19 00:54:53,562 - INFO - Storage initialized at: C:\Users\Nayan\OneDrive\Documents\scrapper\output
+2026-02-19 00:54:57,366 - INFO - Navigating to https://dir.indiamart.com/search.mp?ss=pen&city=pune (Platform: indiamart)
+2026-02-19 00:55:04,358 - INFO - Scraping page 1 (Total collected: 0/150)
+2026-02-19 00:55:04,387 - INFO - Aggressive scrolling... Aiming for ~150 items
+2026-02-19 00:55:06,741 - INFO - Scroll cycle 0/25... Current page height: 4524
+2026-02-19 00:55:11,818 - INFO - Height stable but target not met. Waiting a bit longer...
+2026-02-19 00:55:21,917 - INFO - Height stable but target not met. Waiting a bit longer...
+2026-02-19 00:55:24,920 - INFO - Scroll cycle 5/25... Current page height: 4524
+2026-02-19 00:55:32,526 - INFO - Height stable but target not met. Waiting a bit longer...
+2026-02-19 00:55:35,002 - WARNING - No data to save.
+2026-02-19 00:55:35,004 - INFO - State preserved successfully.
+2026-02-19 00:55:35,782 - INFO - Scraping interrupted by user.
+2026-02-19 00:56:15,951 - INFO - Starting Web Scraper for indiamart...
+2026-02-19 00:56:15,954 - INFO - Storage initialized at: C:\Users\Nayan\OneDrive\Documents\scrapper\output
+2026-02-19 00:56:18,392 - INFO - Navigating to https://dir.indiamart.com/search.mp?ss=testing&city=pune (Platform: indiamart)
+2026-02-19 00:56:27,634 - INFO - Scraping page 1 (Total collected: 0/150)
+2026-02-19 00:56:27,656 - INFO - Aggressive scrolling... Aiming for ~150 items
+2026-02-19 00:56:30,129 - INFO - Scroll cycle 0/25... Current page height: 4254
+2026-02-19 00:56:35,157 - INFO - Height stable but target not met. Waiting a bit longer...
+2026-02-19 00:56:45,530 - INFO - Height stable but target not met. Waiting a bit longer...
+2026-02-19 00:56:47,260 - WARNING - No data to save.
+2026-02-19 00:56:47,261 - INFO - State preserved successfully.
+2026-02-19 00:56:48,496 - INFO - Scraping interrupted by user.
+2026-02-19 00:58:29,743 - INFO - Starting Web Scraper for justdial...
+2026-02-19 00:58:29,744 - INFO - Storage initialized at: C:\Users\Nayan\OneDrive\Documents\scrapper\output
+2026-02-19 00:58:31,826 - INFO - Navigating to https://www.justdial.com/Delhi/water+tanker (Platform: justdial)
+2026-02-19 00:58:47,342 - INFO - Scraping page 1 (Total collected: 0/150)
+2026-02-19 00:58:47,367 - INFO - Aggressive scrolling... Aiming for ~150 items
+2026-02-19 00:58:49,868 - INFO - Scroll cycle 0/25... Current page height: 16577
+2026-02-19 00:58:56,715 - INFO - Height stable but target not met. Waiting a bit longer...
+2026-02-19 00:59:04,580 - INFO - Scroll cycle 5/25... Current page height: 16577
+2026-02-19 00:59:07,148 - INFO - Height stable but target not met. Waiting a bit longer...
+2026-02-19 00:59:18,734 - INFO - Height stable but target not met. Waiting a bit longer...
+2026-02-19 00:59:24,127 - INFO - Scroll cycle 10/25... Current page height: 16577
+2026-02-19 00:59:28,869 - INFO - Height stable but target not met. Waiting a bit longer...
+2026-02-19 00:59:39,001 - INFO - Height stable but target not met. Waiting a bit longer...
+2026-02-19 00:59:41,498 - WARNING - No data to save.
+2026-02-19 00:59:41,498 - INFO - State preserved successfully.
+2026-02-19 00:59:42,234 - INFO - Scraping interrupted by user.
+2026-02-19 01:00:09,737 - INFO - Starting Web Scraper for justdial...
+2026-02-19 01:00:09,738 - INFO - Storage initialized at: C:\Users\Nayan\OneDrive\Documents\scrapper\output
+2026-02-19 01:00:12,194 - INFO - Navigating to https://www.justdial.com/delhi/water+tanker (Platform: justdial)
+2026-02-19 01:00:26,310 - INFO - Scraping page 1 (Total collected: 0/150)
+2026-02-19 01:00:26,325 - INFO - Aggressive scrolling... Aiming for ~150 items
+2026-02-19 01:00:29,310 - INFO - Scroll cycle 0/25... Current page height: 16577
+2026-02-19 01:00:36,801 - INFO - Height stable but target not met. Waiting a bit longer...
+2026-02-19 01:00:44,782 - INFO - Scroll cycle 5/25... Current page height: 16577
+2026-02-19 01:00:47,645 - INFO - Height stable but target not met. Waiting a bit longer...
+2026-02-19 01:00:50,357 - WARNING - No data to save.
+2026-02-19 01:00:50,358 - INFO - State preserved successfully.
+2026-02-19 01:00:51,046 - INFO - Scraping interrupted by user.
+2026-02-19 01:03:37,812 - INFO - Starting Web Scraper for justdial...
+2026-02-19 01:03:37,814 - INFO - Storage initialized at: C:\Users\Nayan\OneDrive\Documents\scrapper\output
+2026-02-19 01:03:40,125 - INFO - Navigating to https://www.justdial.com/delhi/water+tanker (Platform: justdial)
+2026-02-19 01:03:54,890 - INFO - Scraping page 1 (Total collected: 0/150)
+2026-02-19 01:03:54,906 - INFO - Aggressive scrolling... Aiming for ~150 items
+2026-02-19 01:03:57,690 - INFO - Scroll cycle 0/15... Items in DOM: 20
+2026-02-19 01:04:02,887 - INFO - Page height stabilized. Moving to extraction.
+2026-02-19 01:04:02,888 - INFO - Parsing current page content...
+2026-02-19 01:04:03,588 - INFO - Duplicate detected: Pascos ()
+2026-02-19 01:04:03,589 - INFO - Duplicate detected: Pascos ()
+2026-02-19 01:04:03,589 - INFO - Duplicate detected: Pasco Motors ()
+2026-02-19 01:04:03,590 - INFO - Duplicate detected: Pascos ()
+2026-02-19 01:04:03,590 - INFO - Page 1: Found 20 items, Added 16 new. Total: 16
+2026-02-19 01:04:03,622 - INFO - Saved 16 records to C:\Users\Nayan\OneDrive\Documents\scrapper\output\water_tanker_delhi_leads_data_20260219_010403.csv
+2026-02-19 01:04:03,634 - INFO - Standard navigation failed. Attempting forced URL for page 2
+2026-02-19 01:04:03,634 - INFO - Force navigating to: https://www.justdial.com/delhi/water+tanker/page-2
+2026-02-19 01:04:09,816 - INFO - Scraping page 2 (Total collected: 16/150)
+2026-02-19 01:04:09,890 - INFO - Aggressive scrolling... Aiming for ~150 items
+2026-02-19 01:04:12,888 - INFO - Scroll cycle 0/15... Items in DOM: 20
+2026-02-19 01:04:18,122 - INFO - Page height stabilized. Moving to extraction.
+2026-02-19 01:04:18,123 - INFO - Parsing current page content...
+2026-02-19 01:04:18,836 - INFO - Duplicate detected: Ayush Motors INDIA Pvt Ltd ()
+2026-02-19 01:04:18,837 - INFO - Duplicate detected: Surendar Singh ()
+2026-02-19 01:04:18,837 - INFO - Duplicate detected: Praveen Kumar ()
+2026-02-19 01:04:18,838 - INFO - Duplicate detected: Autovikas Sales Service Pvt. Ltd. (TATA Motors) ()
+2026-02-19 01:04:18,838 - INFO - Duplicate detected: Sparsh Auto Tech Pvt Ltd ()
+2026-02-19 01:04:18,838 - INFO - Duplicate detected: Pasco Motors ()
+2026-02-19 01:04:18,839 - INFO - Duplicate detected: Pascos ()
+2026-02-19 01:04:18,839 - INFO - Duplicate detected: Pascos ()
+2026-02-19 01:04:18,840 - INFO - Duplicate detected: Chadha Sales Pvt Ltd ()
+2026-02-19 01:04:18,840 - INFO - Duplicate detected: Pascos ()
+2026-02-19 01:04:18,840 - INFO - Duplicate detected: Triumph Auto Engg (TATA Motors) ()
+2026-02-19 01:04:18,840 - INFO - Duplicate detected: Pasco Motors ()
+2026-02-19 01:04:18,841 - INFO - Duplicate detected: Cargo Motors Delhi Pvt Ltd ()
+2026-02-19 01:04:18,841 - INFO - Duplicate detected: Cargo Motors Pvt Ltd ()
+2026-02-19 01:04:18,841 - INFO - Duplicate detected: Mittal Automobiles Ltd ()
+2026-02-19 01:04:18,842 - INFO - Duplicate detected: Pascos ()
+2026-02-19 01:04:18,842 - INFO - Duplicate detected: Autodeck ()
+2026-02-19 01:04:18,843 - INFO - Duplicate detected: Ashok Auto ()
+2026-02-19 01:04:18,843 - INFO - Duplicate detected: Shiva Motors ()
+2026-02-19 01:04:18,844 - INFO - Duplicate detected: Balaji Automobiles ()
+2026-02-19 01:04:18,844 - INFO - Page 2: Found 20 items, Added 0 new. Total: 16
+2026-02-19 01:04:18,845 - WARNING - Page 2 yielded 0 items. Dumping HTML for inspection.
+2026-02-19 01:04:18,868 - INFO - Standard navigation failed. Attempting forced URL for page 3
+2026-02-19 01:04:18,870 - INFO - Force navigating to: https://www.justdial.com/delhi/water+tanker/page-3
+2026-02-19 01:04:25,634 - INFO - Scraping page 3 (Total collected: 16/150)
+2026-02-19 01:04:25,736 - INFO - Aggressive scrolling... Aiming for ~150 items
+2026-02-19 01:04:29,094 - INFO - Scroll cycle 0/15... Items in DOM: 20
+2026-02-19 01:04:33,960 - WARNING - Scroll interrupted, attempting to parse partial results...
+2026-02-19 01:04:33,960 - INFO - Parsing current page content...
+2026-02-19 01:04:34,099 - ERROR - Fatal error during scraping: Page.content: Target page, context or browser has been closed
+2026-02-19 01:04:34,103 - ERROR - Traceback (most recent call last):
+  File "C:\Users\Nayan\OneDrive\Documents\scrapper\src\scraper.py", line 157, in run
+    content = await page.content()
+              ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Nayan\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\async_api\_generated.py", line 8943, in content
+    return mapping.from_maybe_impl(await self._impl_obj.content())
+                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Nayan\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_page.py", line 535, in content
+    return await self._main_frame.content()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Nayan\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_frame.py", line 475, in content
+    return await self._channel.send("content", None)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Nayan\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_connection.py", line 69, in send
+    return await self._connection.wrap_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "C:\Users\Nayan\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_connection.py", line 559, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+playwright._impl._errors.TargetClosedError: Page.content: Target page, context or browser has been closed
+
+2026-02-19 01:04:34,155 - INFO - Saved 16 records to C:\Users\Nayan\OneDrive\Documents\scrapper\output\water_tanker_delhi_leads_data_20260219_010434.csv
+2026-02-19 01:04:34,163 - INFO - State preserved successfully.
+2026-02-19 01:04:35,230 - INFO - Scraping completed successfully.
