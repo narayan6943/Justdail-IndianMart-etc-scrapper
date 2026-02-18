@@ -9,8 +9,7 @@ def main():
     print("2. IndiaMART")
     print("3. Custom URL (from settings.yaml)")
     
-    choice = input("Select Platform (1-3): ").strip()
-    
+    choice = input("Select Platform (1-3): ").strip()    
     platform = 'custom'
     location = None
     query = None

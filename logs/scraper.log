@@ -869,3 +869,619 @@ Traceback (most recent call last):
   File "C:\Users\Nayan\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_connection.py", line 559, in wrap_api_call
     raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
 Exception: Browser.close: Connection closed while reading from the driver
+2026-02-18 00:32:53,245 - INFO - Starting Web Scraper for custom...
+2026-02-18 00:33:54,463 - INFO - Starting Web Scraper for justdial...
+2026-02-18 00:34:10,648 - INFO - Navigating to https://www.justdial.com/Pune/painter (Platform: justdial)
+2026-02-18 00:34:24,299 - INFO - Scraping page 1 (Total collected: 0/150)
+2026-02-18 00:34:24,411 - INFO - Aggressive scrolling started... Aiming for ~150 items loaded in DOM
+2026-02-18 00:34:32,726 - INFO - Scroll iteration 0/30...
+2026-02-18 00:34:45,284 - INFO - Scroll stuck or reached bottom.
+2026-02-18 00:34:51,134 - INFO - Page 1: Found 20 items, Added 20 new. Total: 20
+2026-02-18 00:34:51,281 - INFO - Standard navigation failed. Attempting forced URL for page 2
+2026-02-18 00:34:51,328 - INFO - Force navigating to: https://www.justdial.com/Pune/painter/page-2
+2026-02-18 00:34:58,143 - INFO - Scraping page 2 (Total collected: 20/150)
+2026-02-18 00:34:58,147 - INFO - Aggressive scrolling started... Aiming for ~150 items loaded in DOM
+2026-02-18 00:35:01,203 - INFO - Scroll iteration 0/30...
+2026-02-18 00:35:07,490 - INFO - Scroll stuck or reached bottom.
+2026-02-18 00:35:08,194 - INFO - Duplicate detected: Kansai Nerolac Paints Limited (08971650772)
+2026-02-18 00:35:08,195 - INFO - Duplicate detected: Jaiswal Contractor (07490975768)
+2026-02-18 00:35:08,195 - INFO - Duplicate detected: Colour Key Home Solution (09035198457)
+2026-02-18 00:35:08,195 - INFO - Duplicate detected: Professsional Painting Services (09035256230)
+2026-02-18 00:35:08,196 - INFO - Duplicate detected: Mayur Arts (08460237236)
+2026-02-18 00:35:08,196 - INFO - Page 2: Found 20 items, Added 15 new. Total: 35
+2026-02-18 00:35:08,218 - INFO - Standard navigation failed. Attempting forced URL for page 3
+2026-02-18 00:35:08,218 - INFO - Force navigating to: https://www.justdial.com/Pune/painter/page-3
+2026-02-18 00:35:15,000 - INFO - Saved 35 records to C:\Users\Nayan\OneDrive\Documents\scrapper\output\leads_data.csv
+2026-02-18 00:35:16,104 - CRITICAL - Fatal error: Browser.close: Connection closed while reading from the driver
+Traceback (most recent call last):
+  File "C:\Users\Nayan\OneDrive\Documents\scrapper\main.py", line 31, in main
+    asyncio.run(scraper.run())
+    ~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Users\Nayan\AppData\Local\Programs\Python\Python314\Lib\asyncio\runners.py", line 204, in run
+    return runner.run(main)
+           ~~~~~~~~~~^^^^^^
+  File "C:\Users\Nayan\AppData\Local\Programs\Python\Python314\Lib\asyncio\runners.py", line 127, in run
+    return self._loop.run_until_complete(task)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\Nayan\AppData\Local\Programs\Python\Python314\Lib\asyncio\base_events.py", line 719, in run_until_complete
+    return future.result()
+           ~~~~~~~~~~~~~^^
+  File "C:\Users\Nayan\OneDrive\Documents\scrapper\src\scraper.py", line 184, in run
+    await browser.close()
+  File "C:\Users\Nayan\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\async_api\_generated.py", line 14322, in close
+    return mapping.from_maybe_impl(await self._impl_obj.close(reason=reason))
+                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Nayan\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_browser.py", line 241, in close
+    raise e
+  File "C:\Users\Nayan\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_browser.py", line 238, in close
+    await self._channel.send("close", None, {"reason": reason})
+  File "C:\Users\Nayan\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_connection.py", line 69, in send
+    return await self._connection.wrap_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "C:\Users\Nayan\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_connection.py", line 559, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+Exception: Browser.close: Connection closed while reading from the driver
+2026-02-18 00:36:05,392 - INFO - Starting Web Scraper for justdial...
+2026-02-18 00:36:11,019 - INFO - Navigating to https://www.justdial.com/Pune/painter (Platform: justdial)
+2026-02-18 00:36:20,317 - INFO - Scraping page 1 (Total collected: 0/150)
+2026-02-18 00:36:20,557 - INFO - Aggressive scrolling started... Aiming for ~150 items loaded in DOM
+2026-02-18 00:36:26,410 - INFO - Scroll iteration 0/30...
+2026-02-18 00:36:36,419 - INFO - Scroll stuck or reached bottom.
+2026-02-18 00:36:38,066 - INFO - Page 1: Found 20 items, Added 20 new. Total: 20
+2026-02-18 00:36:38,281 - INFO - Standard navigation failed. Attempting forced URL for page 2
+2026-02-18 00:36:38,281 - INFO - Force navigating to: https://www.justdial.com/Pune/painter/page-2
+2026-02-18 00:36:45,074 - INFO - Scraping page 2 (Total collected: 20/150)
+2026-02-18 00:36:45,085 - INFO - Aggressive scrolling started... Aiming for ~150 items loaded in DOM
+2026-02-18 00:36:47,450 - INFO - Scroll iteration 0/30...
+2026-02-18 00:36:50,802 - INFO - Saved 20 records to C:\Users\Nayan\OneDrive\Documents\scrapper\output\leads_data.csv
+2026-02-18 00:36:51,479 - CRITICAL - Fatal error: Browser.close: Connection closed while reading from the driver
+Traceback (most recent call last):
+  File "C:\Users\Nayan\OneDrive\Documents\scrapper\main.py", line 31, in main
+    asyncio.run(scraper.run())
+    ~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Users\Nayan\AppData\Local\Programs\Python\Python314\Lib\asyncio\runners.py", line 204, in run
+    return runner.run(main)
+           ~~~~~~~~~~^^^^^^
+  File "C:\Users\Nayan\AppData\Local\Programs\Python\Python314\Lib\asyncio\runners.py", line 127, in run
+    return self._loop.run_until_complete(task)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\Nayan\AppData\Local\Programs\Python\Python314\Lib\asyncio\base_events.py", line 719, in run_until_complete
+    return future.result()
+           ~~~~~~~~~~~~~^^
+  File "C:\Users\Nayan\OneDrive\Documents\scrapper\src\scraper.py", line 184, in run
+    await browser.close()
+  File "C:\Users\Nayan\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\async_api\_generated.py", line 14322, in close
+    return mapping.from_maybe_impl(await self._impl_obj.close(reason=reason))
+                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Nayan\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_browser.py", line 241, in close
+    raise e
+  File "C:\Users\Nayan\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_browser.py", line 238, in close
+    await self._channel.send("close", None, {"reason": reason})
+  File "C:\Users\Nayan\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_connection.py", line 69, in send
+    return await self._connection.wrap_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "C:\Users\Nayan\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_connection.py", line 559, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+Exception: Browser.close: Connection closed while reading from the driver
+2026-02-18 00:37:53,470 - INFO - Starting Web Scraper for justdial...
+2026-02-18 00:38:04,349 - INFO - Navigating to https://www.justdial.com/Pune/painter (Platform: justdial)
+2026-02-18 00:38:15,146 - INFO - Scraping page 1 (Total collected: 0/150)
+2026-02-18 00:38:15,333 - INFO - Aggressive scrolling started... Aiming for ~150 items loaded in DOM
+2026-02-18 00:38:21,933 - INFO - Scroll iteration 0/30...
+2026-02-18 00:38:32,916 - INFO - Scroll stuck or reached bottom.
+2026-02-18 00:38:33,687 - INFO - Page 1: Found 20 items, Added 20 new. Total: 20
+2026-02-18 00:38:33,746 - INFO - Standard navigation failed. Attempting forced URL for page 2
+2026-02-18 00:38:33,747 - INFO - Force navigating to: https://www.justdial.com/Pune/painter/page-2
+2026-02-18 00:38:40,608 - INFO - Scraping page 2 (Total collected: 20/150)
+2026-02-18 00:38:40,609 - INFO - Aggressive scrolling started... Aiming for ~150 items loaded in DOM
+2026-02-18 00:38:42,764 - INFO - Scroll iteration 0/30...
+2026-02-18 00:38:49,439 - INFO - Scroll stuck or reached bottom.
+2026-02-18 00:38:51,103 - INFO - Duplicate detected: Colour Key Home Solution (09035198457)
+2026-02-18 00:38:51,104 - INFO - Duplicate detected: Kansai Nerolac Paints Limited (08971650772)
+2026-02-18 00:38:51,105 - INFO - Duplicate detected: Abhee Decorators (09035094896)
+2026-02-18 00:38:51,108 - INFO - Duplicate detected: Palace Decor (08147661394)
+2026-02-18 00:38:51,109 - INFO - Duplicate detected: Saira Painting Works (09035149978)
+2026-02-18 00:38:51,112 - INFO - Page 2: Found 20 items, Added 15 new. Total: 35
+2026-02-18 00:38:51,181 - INFO - Standard navigation failed. Attempting forced URL for page 3
+2026-02-18 00:38:51,182 - INFO - Force navigating to: https://www.justdial.com/Pune/painter/page-3
+2026-02-18 00:38:57,236 - INFO - Scraping page 3 (Total collected: 35/150)
+2026-02-18 00:38:57,236 - INFO - Aggressive scrolling started... Aiming for ~150 items loaded in DOM
+2026-02-18 00:38:59,733 - INFO - Scroll iteration 0/30...
+2026-02-18 00:39:06,050 - INFO - Scroll stuck or reached bottom.
+2026-02-18 00:39:06,572 - INFO - Duplicate detected: Idris Pop and Painting Contractor (07487861452)
+2026-02-18 00:39:06,573 - INFO - Duplicate detected: Kansai Nerolac Paints Limited (08971650772)
+2026-02-18 00:39:06,573 - INFO - Duplicate detected: Professsional Painting Services (09035256230)
+2026-02-18 00:39:06,573 - INFO - Duplicate detected: Saira Painting Works (09035149978)
+2026-02-18 00:39:06,574 - INFO - Duplicate detected: Jaiswal Contractor (07490975768)
+2026-02-18 00:39:06,574 - INFO - Duplicate detected: Palace Decor (08147661394)
+2026-02-18 00:39:06,575 - INFO - Duplicate detected: Jay Bhavani Construction (09845451454)
+2026-02-18 00:39:06,575 - INFO - Duplicate detected: Spruhee Painting Contractor (08460409838)
+2026-02-18 00:39:06,575 - INFO - Duplicate detected: Abhee Decorators (09035094896)
+2026-02-18 00:39:06,576 - INFO - Page 3: Found 20 items, Added 11 new. Total: 46
+2026-02-18 00:39:06,593 - INFO - Standard navigation failed. Attempting forced URL for page 4
+2026-02-18 00:39:06,593 - INFO - Force navigating to: https://www.justdial.com/Pune/painter/page-4
+2026-02-18 00:39:11,385 - INFO - Scraping page 4 (Total collected: 46/150)
+2026-02-18 00:39:11,385 - INFO - Aggressive scrolling started... Aiming for ~150 items loaded in DOM
+2026-02-18 00:39:13,540 - INFO - Scroll iteration 0/30...
+2026-02-18 00:39:19,950 - INFO - Scroll stuck or reached bottom.
+2026-02-18 00:39:20,645 - INFO - Duplicate detected: Jay Ganesh Enterprises (08460399951)
+2026-02-18 00:39:20,645 - INFO - Duplicate detected: Kansai Nerolac Paints Limited (08971650772)
+2026-02-18 00:39:20,646 - INFO - Duplicate detected: Colour Key Home Solution (09035198457)
+2026-02-18 00:39:20,647 - INFO - Duplicate detected: S V Contractor (09035158179)
+2026-02-18 00:39:20,647 - INFO - Duplicate detected: Sai Painting (09980109062)
+2026-02-18 00:39:20,647 - INFO - Duplicate detected: Samarth Happy Coats (08401977367)
+2026-02-18 00:39:20,648 - INFO - Duplicate detected: Balendra Enterprises (08460255531)
+2026-02-18 00:39:20,648 - INFO - Duplicate detected: Royal Painting (08460255578)
+2026-02-18 00:39:20,648 - INFO - Duplicate detected: Shree Ganesh Painting Contractor (08460544750)
+2026-02-18 00:39:20,648 - INFO - Duplicate detected: Akshay Painting Service (08460224709)
+2026-02-18 00:39:20,649 - INFO - Duplicate detected: Spruhee Painting Contractor (08460409838)
+2026-02-18 00:39:20,649 - INFO - Duplicate detected: Yash Painting Services (09724883617)
+2026-02-18 00:39:20,649 - INFO - Page 4: Found 20 items, Added 8 new. Total: 54
+2026-02-18 00:39:20,691 - INFO - Standard navigation failed. Attempting forced URL for page 5
+2026-02-18 00:39:20,691 - INFO - Force navigating to: https://www.justdial.com/Pune/painter/page-5
+2026-02-18 00:39:27,065 - INFO - Scraping page 5 (Total collected: 54/150)
+2026-02-18 00:39:27,093 - INFO - Aggressive scrolling started... Aiming for ~150 items loaded in DOM
+2026-02-18 00:39:29,647 - INFO - Scroll iteration 0/30...
+2026-02-18 00:39:35,814 - INFO - Scroll stuck or reached bottom.
+2026-02-18 00:39:36,384 - INFO - Duplicate detected: Kansai Nerolac Paints Limited (08971650772)
+2026-02-18 00:39:36,384 - INFO - Duplicate detected: Mauli Enterprises (09845476099)
+2026-02-18 00:39:36,385 - INFO - Duplicate detected: Colour Key Home Solution (09035198457)
+2026-02-18 00:39:36,385 - INFO - Duplicate detected: Professsional Painting Services (09035256230)
+2026-02-18 00:39:36,385 - INFO - Duplicate detected: Momin Enterprises (09731837543)
+2026-02-18 00:39:36,386 - INFO - Duplicate detected: Jay Ganesh Enterprises (08460399951)
+2026-02-18 00:39:36,386 - INFO - Duplicate detected: Sai Enterprises (09724723368)
+2026-02-18 00:39:36,386 - INFO - Duplicate detected: Sai Painting (09980109062)
+2026-02-18 00:39:36,387 - INFO - Duplicate detected: Shree Ganesh Painting Contractor (08460544750)
+2026-02-18 00:39:36,388 - INFO - Duplicate detected: Idris Pop and Painting Contractor (07487861452)
+2026-02-18 00:39:36,388 - INFO - Page 5: Found 20 items, Added 10 new. Total: 64
+2026-02-18 00:39:36,410 - INFO - Standard navigation failed. Attempting forced URL for page 6
+2026-02-18 00:39:36,410 - INFO - Force navigating to: https://www.justdial.com/Pune/painter/page-6
+2026-02-18 00:39:43,001 - INFO - Scraping page 6 (Total collected: 64/150)
+2026-02-18 00:39:43,002 - INFO - Aggressive scrolling started... Aiming for ~150 items loaded in DOM
+2026-02-18 00:39:45,161 - INFO - Scroll iteration 0/30...
+2026-02-18 00:39:51,540 - INFO - Scroll stuck or reached bottom.
+2026-02-18 00:39:52,120 - INFO - Duplicate detected: Colour Key Home Solution (09035198457)
+2026-02-18 00:39:52,121 - INFO - Duplicate detected: Kansai Nerolac Paints Limited (08971650772)
+2026-02-18 00:39:52,121 - INFO - Duplicate detected: Professsional Painting Services (09035256230)
+2026-02-18 00:39:52,122 - INFO - Duplicate detected: Vishal Painting Services (08511819928)
+2026-02-18 00:39:52,122 - INFO - Duplicate detected: Gd Enterprises (08487051336)
+2026-02-18 00:39:52,122 - INFO - Duplicate detected: Saira Painting Works (09035149978)
+2026-02-18 00:39:52,123 - INFO - Duplicate detected: Vastutech Enterprises (07801966731)
+2026-02-18 00:39:52,123 - INFO - Duplicate detected: S V Contractor (09035158179)
+2026-02-18 00:39:52,123 - INFO - Duplicate detected: Akshay Painting Service (08460224709)
+2026-02-18 00:39:52,124 - INFO - Duplicate detected: Aradhya Enterprises (08401510966)
+2026-02-18 00:39:52,124 - INFO - Duplicate detected: Sunshine Painting Works (09725348473)
+2026-02-18 00:39:52,124 - INFO - Duplicate detected: Palace Decor (08147661394)
+2026-02-18 00:39:52,124 - INFO - Duplicate detected: Painting Servicess (07801888186)
+2026-02-18 00:39:52,125 - INFO - Duplicate detected: PNB Contractor (09035789730)
+2026-02-18 00:39:52,125 - INFO - Page 6: Found 20 items, Added 6 new. Total: 70
+2026-02-18 00:39:52,157 - INFO - Standard navigation failed. Attempting forced URL for page 7
+2026-02-18 00:39:52,157 - INFO - Force navigating to: https://www.justdial.com/Pune/painter/page-7
+2026-02-18 00:39:58,600 - INFO - Scraping page 7 (Total collected: 70/150)
+2026-02-18 00:39:58,600 - INFO - Aggressive scrolling started... Aiming for ~150 items loaded in DOM
+2026-02-18 00:40:00,747 - INFO - Scroll iteration 0/30...
+2026-02-18 00:40:06,973 - INFO - Scroll stuck or reached bottom.
+2026-02-18 00:40:07,595 - INFO - Duplicate detected: Colour Key Home Solution (09035198457)
+2026-02-18 00:40:07,596 - INFO - Duplicate detected: Aarav Painting Contractors (07801859321)
+2026-02-18 00:40:07,596 - INFO - Duplicate detected: Kansai Nerolac Paints Limited (08971650772)
+2026-02-18 00:40:07,596 - INFO - Duplicate detected: Professsional Painting Services (09035256230)
+2026-02-18 00:40:07,597 - INFO - Duplicate detected: Paintwell (08971295332)
+2026-02-18 00:40:07,597 - INFO - Duplicate detected: Jai Bhavani Painting Contractors (07383875985)
+2026-02-18 00:40:07,597 - INFO - Duplicate detected: Vishal Painting Services (08511819928)
+2026-02-18 00:40:07,598 - INFO - Duplicate detected: Sai Enterprises (09724723368)
+2026-02-18 00:40:07,599 - INFO - Duplicate detected: Sk Painting Works (07624966409)
+2026-02-18 00:40:07,600 - INFO - Duplicate detected: Samarth Happy Coats (08401977367)
+2026-02-18 00:40:07,600 - INFO - Duplicate detected: Jaiswal Contractor (07490975768)
+2026-02-18 00:40:07,601 - INFO - Duplicate detected: Shree Kanifnath Arts (08123144439)
+2026-02-18 00:40:07,602 - INFO - Duplicate detected: Painting Servicess (07801888186)
+2026-02-18 00:40:07,602 - INFO - Page 7: Found 20 items, Added 7 new. Total: 77
+2026-02-18 00:40:07,624 - INFO - Standard navigation failed. Attempting forced URL for page 8
+2026-02-18 00:40:07,626 - INFO - Force navigating to: https://www.justdial.com/Pune/painter/page-8
+2026-02-18 00:40:13,785 - INFO - Scraping page 8 (Total collected: 77/150)
+2026-02-18 00:40:13,786 - INFO - Aggressive scrolling started... Aiming for ~150 items loaded in DOM
+2026-02-18 00:40:15,824 - INFO - Scroll iteration 0/30...
+2026-02-18 00:40:22,113 - INFO - Scroll stuck or reached bottom.
+2026-02-18 00:40:22,719 - INFO - Duplicate detected: Kansai Nerolac Paints Limited (08971650772)
+2026-02-18 00:40:22,722 - INFO - Duplicate detected: Nitin Narale Enterprises (08511061277)
+2026-02-18 00:40:22,724 - INFO - Duplicate detected: Palace Decor (08147661394)
+2026-02-18 00:40:22,725 - INFO - Duplicate detected: Colour Key Home Solution (09035198457)
+2026-02-18 00:40:22,726 - INFO - Duplicate detected: Swara Enterprises (08460260421)
+2026-02-18 00:40:22,727 - INFO - Duplicate detected: Ask Painters (08460426325)
+2026-02-18 00:40:22,728 - INFO - Duplicate detected: Jaiswal Contractor (07490975768)
+2026-02-18 00:40:22,733 - INFO - Duplicate detected: Royal Painting Contractor (07041469924)
+2026-02-18 00:40:22,741 - INFO - Duplicate detected: Shri Swami Samarth Enterprises (08971269371)
+2026-02-18 00:40:22,742 - INFO - Duplicate detected: Sakshi Enterprises (08460418054)
+2026-02-18 00:40:22,742 - INFO - Duplicate detected: Akshay Painting Service (08460224709)
+2026-02-18 00:40:22,743 - INFO - Duplicate detected: Sk Painting Works (07624966409)
+2026-02-18 00:40:22,744 - INFO - Page 8: Found 20 items, Added 8 new. Total: 85
+2026-02-18 00:40:22,784 - INFO - Standard navigation failed. Attempting forced URL for page 9
+2026-02-18 00:40:22,784 - INFO - Force navigating to: https://www.justdial.com/Pune/painter/page-9
+2026-02-18 00:40:28,542 - INFO - Scraping page 9 (Total collected: 85/150)
+2026-02-18 00:40:28,543 - INFO - Aggressive scrolling started... Aiming for ~150 items loaded in DOM
+2026-02-18 00:40:30,930 - INFO - Scroll iteration 0/30...
+2026-02-18 00:40:37,148 - INFO - Scroll stuck or reached bottom.
+2026-02-18 00:40:37,682 - INFO - Duplicate detected: Palace Decor (09035770660)
+2026-02-18 00:40:37,682 - INFO - Duplicate detected: B K Enterprises (09035196869)
+2026-02-18 00:40:37,683 - INFO - Duplicate detected: Shri Swami Samarth Enterprises (08971269371)
+2026-02-18 00:40:37,683 - INFO - Duplicate detected: Sai Painting (09980109062)
+2026-02-18 00:40:37,683 - INFO - Duplicate detected: Colour Key Home Solution (09035198457)
+2026-02-18 00:40:37,683 - INFO - Duplicate detected: Royal Painting Contractor (07041469924)
+2026-02-18 00:40:37,684 - INFO - Duplicate detected: Ask Painters (08460426325)
+2026-02-18 00:40:37,684 - INFO - Duplicate detected: Arcedge Associates (07411653350)
+2026-02-18 00:40:37,684 - INFO - Duplicate detected: Classic Decor Painting Services (08128900312)
+2026-02-18 00:40:37,685 - INFO - Duplicate detected: Shree Ganesh Painting Contractor (08460544750)
+2026-02-18 00:40:37,685 - INFO - Duplicate detected: Mayur Arts (08460237236)
+2026-02-18 00:40:37,686 - INFO - Duplicate detected: Sunshine Painting Works (09725348473)
+2026-02-18 00:40:37,686 - INFO - Duplicate detected: Shriram Painting Interiors (07411573613)
+2026-02-18 00:40:37,686 - INFO - Duplicate detected: Vrr Cleaning and Painting (09035165387)
+2026-02-18 00:40:37,686 - INFO - Page 9: Found 20 items, Added 6 new. Total: 91
+2026-02-18 00:40:37,709 - INFO - Standard navigation failed. Attempting forced URL for page 10
+2026-02-18 00:40:37,709 - INFO - Force navigating to: https://www.justdial.com/Pune/painter/page-10
+2026-02-18 00:40:43,959 - INFO - Scraping page 10 (Total collected: 91/150)
+2026-02-18 00:40:43,960 - INFO - Aggressive scrolling started... Aiming for ~150 items loaded in DOM
+2026-02-18 00:40:46,439 - INFO - Scroll iteration 0/30...
+2026-02-18 00:40:52,969 - INFO - Scroll stuck or reached bottom.
+2026-02-18 00:40:54,049 - INFO - Duplicate detected: Mauli Enterprises (09845476099)
+2026-02-18 00:40:54,050 - INFO - Duplicate detected: Kansai Nerolac Paints Limited (08971650772)
+2026-02-18 00:40:54,050 - INFO - Duplicate detected: Royal Painting (08460255578)
+2026-02-18 00:40:54,051 - INFO - Duplicate detected: Om Prakash Painting Works (08904953686)
+2026-02-18 00:40:54,052 - INFO - Duplicate detected: Vastutech Enterprises (07801966731)
+2026-02-18 00:40:54,053 - INFO - Duplicate detected: Colour Key Home Solution (09035198457)
+2026-02-18 00:40:54,054 - INFO - Duplicate detected: Abhee Decorators (09035094896)
+2026-02-18 00:40:54,055 - INFO - Duplicate detected: Vrr Cleaning and Painting (09035165387)
+2026-02-18 00:40:54,056 - INFO - Duplicate detected: S V Contractor (09035158179)
+2026-02-18 00:40:54,057 - INFO - Duplicate detected: Saira Painting Works (09035149978)
+2026-02-18 00:40:54,057 - INFO - Duplicate detected: Jaiswal Contractor (07490975768)
+2026-02-18 00:40:54,058 - INFO - Duplicate detected: Aarav Painting Contractors (07801859321)
+2026-02-18 00:40:54,058 - INFO - Duplicate detected: Vanshika Enterprises (08401831047)
+2026-02-18 00:40:54,059 - INFO - Duplicate detected: Sunshine Painting Works (09725348473)
+2026-02-18 00:40:54,060 - INFO - Duplicate detected: B K Enterprises (09035196869)
+2026-02-18 00:40:54,060 - INFO - Duplicate detected: Natraj Painting & Interiors (09035244524)
+2026-02-18 00:40:54,061 - INFO - Page 10: Found 20 items, Added 4 new. Total: 95
+2026-02-18 00:40:54,139 - INFO - Standard navigation failed. Attempting forced URL for page 11
+2026-02-18 00:40:54,139 - INFO - Force navigating to: https://www.justdial.com/Pune/painter/page-11
+2026-02-18 00:41:00,621 - INFO - Scraping page 11 (Total collected: 95/150)
+2026-02-18 00:41:00,621 - INFO - Aggressive scrolling started... Aiming for ~150 items loaded in DOM
+2026-02-18 00:41:02,718 - INFO - Scroll iteration 0/30...
+2026-02-18 00:41:09,091 - INFO - Scroll stuck or reached bottom.
+2026-02-18 00:41:10,217 - INFO - Duplicate detected: Jay Ganesh Enterprises (08460399951)
+2026-02-18 00:41:10,218 - INFO - Duplicate detected: Kansai Nerolac Paints Limited (08971650772)
+2026-02-18 00:41:10,218 - INFO - Duplicate detected: Colour Key Home Solution (09035198457)
+2026-02-18 00:41:10,218 - INFO - Duplicate detected: Mauli Enterprises (09845476099)
+2026-02-18 00:41:10,219 - INFO - Duplicate detected: Swara Enterprises (08460260421)
+2026-02-18 00:41:10,219 - INFO - Duplicate detected: Saira Painting Works (09035149978)
+2026-02-18 00:41:10,220 - INFO - Duplicate detected: Professsional Painting Services (09035256230)
+2026-02-18 00:41:10,220 - INFO - Duplicate detected: Vanshika Enterprises (08401831047)
+2026-02-18 00:41:10,220 - INFO - Duplicate detected: Samruddhi Paint Enterprises (09606152287)
+2026-02-18 00:41:10,221 - INFO - Duplicate detected: Jaiswal Contractor (07490975768)
+2026-02-18 00:41:10,221 - INFO - Duplicate detected: Babas Maintanance Services (07411564311)
+2026-02-18 00:41:10,221 - INFO - Duplicate detected: Omkar Painting Services (08460460264)
+2026-02-18 00:41:10,221 - INFO - Duplicate detected: Palace Decor (08147661394)
+2026-02-18 00:41:10,221 - INFO - Duplicate detected: Sandeep Enterprises (07411793869)
+2026-02-18 00:41:10,221 - INFO - Duplicate detected: Samarth Happy Coats (08401977367)
+2026-02-18 00:41:10,222 - INFO - Page 11: Found 20 items, Added 5 new. Total: 100
+2026-02-18 00:41:10,257 - INFO - Standard navigation failed. Attempting forced URL for page 12
+2026-02-18 00:41:10,257 - INFO - Force navigating to: https://www.justdial.com/Pune/painter/page-12
+2026-02-18 00:41:15,205 - INFO - Scraping page 12 (Total collected: 100/150)
+2026-02-18 00:41:15,206 - INFO - Aggressive scrolling started... Aiming for ~150 items loaded in DOM
+2026-02-18 00:41:17,571 - INFO - Scroll iteration 0/30...
+2026-02-18 00:41:23,744 - INFO - Scroll stuck or reached bottom.
+2026-02-18 00:41:24,309 - INFO - Duplicate detected: Palace Decor (09035770660)
+2026-02-18 00:41:24,309 - INFO - Duplicate detected: B K Enterprises (09035196869)
+2026-02-18 00:41:24,310 - INFO - Duplicate detected: Shri Swami Samarth Enterprises (08971269371)
+2026-02-18 00:41:24,310 - INFO - Duplicate detected: Sai Painting (09980109062)
+2026-02-18 00:41:24,310 - INFO - Duplicate detected: Colour Key Home Solution (09035198457)
+2026-02-18 00:41:24,310 - INFO - Duplicate detected: Jaiswal Contractor (07490975768)
+2026-02-18 00:41:24,311 - INFO - Duplicate detected: Chhatrapati Enterprises (08128392503)
+2026-02-18 00:41:24,311 - INFO - Duplicate detected: Kansai Nerolac Paints Limited (08971650772)
+2026-02-18 00:41:24,311 - INFO - Duplicate detected: Saira Painting Works (09035149978)
+2026-02-18 00:41:24,312 - INFO - Duplicate detected: Abhee Decorators (09035094896)
+2026-02-18 00:41:24,312 - INFO - Duplicate detected: Swara Enterprises (08460260421)
+2026-02-18 00:41:24,312 - INFO - Duplicate detected: Professsional Painting Services (09035256230)
+2026-02-18 00:41:24,312 - INFO - Duplicate detected: Aryan Enterprises (09035246906)
+2026-02-18 00:41:24,313 - INFO - Duplicate detected: Om Prakash Painting Works (08904953686)
+2026-02-18 00:41:24,313 - INFO - Duplicate detected: Mauli Enterprises (09845476099)
+2026-02-18 00:41:24,313 - INFO - Page 12: Found 20 items, Added 5 new. Total: 105
+2026-02-18 00:41:24,336 - INFO - Standard navigation failed. Attempting forced URL for page 13
+2026-02-18 00:41:24,337 - INFO - Force navigating to: https://www.justdial.com/Pune/painter/page-13
+2026-02-18 00:41:29,201 - INFO - Scraping page 13 (Total collected: 105/150)
+2026-02-18 00:41:29,208 - INFO - Aggressive scrolling started... Aiming for ~150 items loaded in DOM
+2026-02-18 00:41:31,463 - INFO - Scroll iteration 0/30...
+2026-02-18 00:41:37,701 - INFO - Scroll stuck or reached bottom.
+2026-02-18 00:41:38,534 - INFO - Duplicate detected: Palace Decor (09035770660)
+2026-02-18 00:41:38,535 - INFO - Duplicate detected: B K Enterprises (09035196869)
+2026-02-18 00:41:38,535 - INFO - Duplicate detected: Shri Swami Samarth Enterprises (08971269371)
+2026-02-18 00:41:38,536 - INFO - Duplicate detected: Sai Painting (09980109062)
+2026-02-18 00:41:38,536 - INFO - Duplicate detected: Colour Key Home Solution (09035198457)
+2026-02-18 00:41:38,537 - INFO - Duplicate detected: Mauli Enterprises (09845476099)
+2026-02-18 00:41:38,537 - INFO - Duplicate detected: Sharma Painting Contractor (09035125970)
+2026-02-18 00:41:38,538 - INFO - Duplicate detected: Kansai Nerolac Paints Limited (08971650772)
+2026-02-18 00:41:38,538 - INFO - Duplicate detected: Jai Bhavani Painting Contractors (07383875985)
+2026-02-18 00:41:38,539 - INFO - Duplicate detected: Palace Decor (08147661394)
+2026-02-18 00:41:38,539 - INFO - Duplicate detected: Guru Painting Services (09035176116)
+2026-02-18 00:41:38,540 - INFO - Duplicate detected: Kalakriti Paint Works (07405150029)
+2026-02-18 00:41:38,541 - INFO - Duplicate detected: Ask Painters (08460426325)
+2026-02-18 00:41:38,546 - INFO - Duplicate detected: Vishal Painting Services (08511819928)
+2026-02-18 00:41:38,548 - INFO - Duplicate detected: Royal Painting (08460255578)
+2026-02-18 00:41:38,550 - INFO - Page 13: Found 20 items, Added 5 new. Total: 110
+2026-02-18 00:41:38,583 - INFO - Standard navigation failed. Attempting forced URL for page 14
+2026-02-18 00:41:38,583 - INFO - Force navigating to: https://www.justdial.com/Pune/painter/page-14
+2026-02-18 00:41:43,239 - INFO - Scraping page 14 (Total collected: 110/150)
+2026-02-18 00:41:43,263 - INFO - Aggressive scrolling started... Aiming for ~150 items loaded in DOM
+2026-02-18 00:41:45,486 - INFO - Scroll iteration 0/30...
+2026-02-18 00:41:51,753 - INFO - Scroll stuck or reached bottom.
+2026-02-18 00:41:52,346 - INFO - Duplicate detected: Jay Ganesh Enterprises (08460399951)
+2026-02-18 00:41:52,347 - INFO - Duplicate detected: Kansai Nerolac Paints Limited (08971650772)
+2026-02-18 00:41:52,348 - INFO - Duplicate detected: Colour Key Home Solution (09035198457)
+2026-02-18 00:41:52,349 - INFO - Duplicate detected: Mauli Enterprises (09845476099)
+2026-02-18 00:41:52,349 - INFO - Duplicate detected: Swara Enterprises (08460260421)
+2026-02-18 00:41:52,349 - INFO - Duplicate detected: B K Enterprises (09035196869)
+2026-02-18 00:41:52,350 - INFO - Duplicate detected: Palace Decor (09035770660)
+2026-02-18 00:41:52,350 - INFO - Duplicate detected: Aditya Painting Works (07383396946)
+2026-02-18 00:41:52,350 - INFO - Duplicate detected: Vijay Gond Enterprises (08460406778)
+2026-02-18 00:41:52,351 - INFO - Duplicate detected: Varad Enterprises (08123196913)
+2026-02-18 00:41:52,351 - INFO - Duplicate detected: Abhee Decorators (09035094896)
+2026-02-18 00:41:52,351 - INFO - Duplicate detected: Panchal Painting Services (07383676562)
+2026-02-18 00:41:52,351 - INFO - Duplicate detected: Sai Painting (09980109062)
+2026-02-18 00:41:52,352 - INFO - Duplicate detected: Vighnaharta Enterprises (08128952332)
+2026-02-18 00:41:52,352 - INFO - Duplicate detected: Vishal Painting Services (08511819928)
+2026-02-18 00:41:52,352 - INFO - Duplicate detected: Spruhee Painting Contractor (08460409838)
+2026-02-18 00:41:52,353 - INFO - Page 14: Found 20 items, Added 4 new. Total: 114
+2026-02-18 00:41:52,376 - INFO - Standard navigation failed. Attempting forced URL for page 15
+2026-02-18 00:41:52,376 - INFO - Force navigating to: https://www.justdial.com/Pune/painter/page-15
+2026-02-18 00:41:57,729 - INFO - Scraping page 15 (Total collected: 114/150)
+2026-02-18 00:41:57,730 - INFO - Aggressive scrolling started... Aiming for ~150 items loaded in DOM
+2026-02-18 00:42:00,156 - INFO - Scroll iteration 0/30...
+2026-02-18 00:42:06,476 - INFO - Scroll stuck or reached bottom.
+2026-02-18 00:42:08,276 - INFO - Duplicate detected: Jaiswal Contractor (07490975768)
+2026-02-18 00:42:08,276 - INFO - Duplicate detected: Mauli Enterprises (09845476099)
+2026-02-18 00:42:08,278 - INFO - Duplicate detected: Shivsagar Paints (08197279620)
+2026-02-18 00:42:08,279 - INFO - Duplicate detected: Kansai Nerolac Paints Limited (08971650772)
+2026-02-18 00:42:08,280 - INFO - Duplicate detected: Vastutech Enterprises (07801966731)
+2026-02-18 00:42:08,281 - INFO - Duplicate detected: Shree Ganesh Painting Contractor (08460544750)
+2026-02-18 00:42:08,282 - INFO - Duplicate detected: Vanshika Enterprises (08401831047)
+2026-02-18 00:42:08,296 - INFO - Duplicate detected: Arcedge Associates (07411653350)
+2026-02-18 00:42:08,298 - INFO - Duplicate detected: Smart Painting Services (09008651993)
+2026-02-18 00:42:08,299 - INFO - Duplicate detected: Yash Painting Services (09724883617)
+2026-02-18 00:42:08,312 - INFO - Duplicate detected: Sai Enterprises (09724723368)
+2026-02-18 00:42:08,312 - INFO - Duplicate detected: Nitin Narale Enterprises (08511061277)
+2026-02-18 00:42:08,313 - INFO - Duplicate detected: Amg Interior Concept (08401560433)
+2026-02-18 00:42:08,314 - INFO - Duplicate detected: SUDARSHAN ENTERPRISES (07383872109)
+2026-02-18 00:42:08,315 - INFO - Page 15: Found 20 items, Added 6 new. Total: 120
+2026-02-18 00:42:08,390 - INFO - Standard navigation failed. Attempting forced URL for page 16
+2026-02-18 00:42:08,391 - INFO - Force navigating to: https://www.justdial.com/Pune/painter/page-16
+2026-02-18 00:42:14,431 - INFO - Scraping page 16 (Total collected: 120/150)
+2026-02-18 00:42:14,431 - INFO - Aggressive scrolling started... Aiming for ~150 items loaded in DOM
+2026-02-18 00:42:16,593 - INFO - Scroll iteration 0/30...
+2026-02-18 00:42:24,826 - INFO - Scroll stuck or reached bottom.
+2026-02-18 00:42:25,404 - INFO - Duplicate detected: Kansai Nerolac Paints Limited (08971650772)
+2026-02-18 00:42:25,404 - INFO - Duplicate detected: Swara Enterprises (08460260421)
+2026-02-18 00:42:25,405 - INFO - Duplicate detected: Palace Decor (08147661394)
+2026-02-18 00:42:25,406 - INFO - Duplicate detected: Jay Ganesh Enterprises (08460399951)
+2026-02-18 00:42:25,406 - INFO - Duplicate detected: Nitin Narale Enterprises (08511061277)
+2026-02-18 00:42:25,407 - INFO - Duplicate detected: Sai Painting (09980109062)
+2026-02-18 00:42:25,407 - INFO - Duplicate detected: Utkarsh Painting (08197594889)
+2026-02-18 00:42:25,407 - INFO - Duplicate detected: Royal Painting (08460255578)
+2026-02-18 00:42:25,408 - INFO - Duplicate detected: Akshay Painting Service (08460224709)
+2026-02-18 00:42:25,408 - INFO - Duplicate detected: B K Enterprises (09035196869)
+2026-02-18 00:42:25,408 - INFO - Duplicate detected: Radha Buildcon (07411668661)
+2026-02-18 00:42:25,409 - INFO - Duplicate detected: Giri Painters (08460197295)
+2026-02-18 00:42:25,409 - INFO - Duplicate detected: Professsional Painting Services (09035256230)
+2026-02-18 00:42:25,410 - INFO - Duplicate detected: Colour Key Home Solution (09035198457)
+2026-02-18 00:42:25,410 - INFO - Duplicate detected: R K Painter (07490055051)
+2026-02-18 00:42:25,411 - INFO - Duplicate detected: Paintwell (08971295332)
+2026-02-18 00:42:25,411 - INFO - Page 16: Found 20 items, Added 4 new. Total: 124
+2026-02-18 00:42:25,438 - INFO - Standard navigation failed. Attempting forced URL for page 17
+2026-02-18 00:42:25,438 - INFO - Force navigating to: https://www.justdial.com/Pune/painter/page-17
+2026-02-18 00:42:31,372 - INFO - Scraping page 17 (Total collected: 124/150)
+2026-02-18 00:42:31,373 - INFO - Aggressive scrolling started... Aiming for ~150 items loaded in DOM
+2026-02-18 00:42:33,946 - INFO - Scroll iteration 0/30...
+2026-02-18 00:42:42,236 - INFO - Scroll stuck or reached bottom.
+2026-02-18 00:42:42,781 - INFO - Duplicate detected: Natraj Painting Solutions (09035186727)
+2026-02-18 00:42:42,782 - INFO - Duplicate detected: Vishal Painting Services (08511819928)
+2026-02-18 00:42:42,783 - INFO - Duplicate detected: Paintwell (08971295332)
+2026-02-18 00:42:42,783 - INFO - Duplicate detected: Vastutech Enterprises (07801966731)
+2026-02-18 00:42:42,784 - INFO - Duplicate detected: Shaurya Enterprises (08511514770)
+2026-02-18 00:42:42,784 - INFO - Duplicate detected: Dharamraj Painting Contractor (08460243366)
+2026-02-18 00:42:42,785 - INFO - Duplicate detected: C.C.D Services (09845458905)
+2026-02-18 00:42:42,785 - INFO - Duplicate detected: Mauli Enterprises (09845476099)
+2026-02-18 00:42:42,786 - INFO - Duplicate detected: Shree Ganesh Painting Contractor (08460544750)
+2026-02-18 00:42:42,786 - INFO - Duplicate detected: Om Prakash Painting Works (08904953686)
+2026-02-18 00:42:42,787 - INFO - Duplicate detected: Utkarsh Painting (08197594889)
+2026-02-18 00:42:42,787 - INFO - Duplicate detected: SUDARSHAN ENTERPRISES (07383872109)
+2026-02-18 00:42:42,789 - INFO - Duplicate detected: Colour Key Home Solution (09035198457)
+2026-02-18 00:42:42,792 - INFO - Duplicate detected: Kansai Nerolac Paints Limited (08971650772)
+2026-02-18 00:42:42,793 - INFO - Duplicate detected: Akshay Painting Service (08460224709)
+2026-02-18 00:42:42,793 - INFO - Duplicate detected: Omkar Painting Services (08460460264)
+2026-02-18 00:42:42,794 - INFO - Page 17: Found 20 items, Added 4 new. Total: 128
+2026-02-18 00:42:42,821 - INFO - Standard navigation failed. Attempting forced URL for page 18
+2026-02-18 00:42:42,822 - INFO - Force navigating to: https://www.justdial.com/Pune/painter/page-18
+2026-02-18 00:42:49,335 - INFO - Scraping page 18 (Total collected: 128/150)
+2026-02-18 00:42:49,335 - INFO - Aggressive scrolling started... Aiming for ~150 items loaded in DOM
+2026-02-18 00:42:51,374 - INFO - Scroll iteration 0/30...
+2026-02-18 00:42:57,512 - INFO - Scroll stuck or reached bottom.
+2026-02-18 00:42:58,082 - INFO - Duplicate detected: Colour Key Home Solution (09035198457)
+2026-02-18 00:42:58,082 - INFO - Duplicate detected: Aarav Painting Contractors (07801859321)
+2026-02-18 00:42:58,083 - INFO - Duplicate detected: Kansai Nerolac Paints Limited (08971650772)
+2026-02-18 00:42:58,083 - INFO - Duplicate detected: Professsional Painting Services (09035256230)
+2026-02-18 00:42:58,083 - INFO - Duplicate detected: Shree Ram Furniture and Interior (09725323671)
+2026-02-18 00:42:58,083 - INFO - Duplicate detected: Swara Enterprises (08460260421)
+2026-02-18 00:42:58,084 - INFO - Duplicate detected: Natraj Painting & Interiors (09035244524)
+2026-02-18 00:42:58,084 - INFO - Duplicate detected: Mayur Arts (08460237236)
+2026-02-18 00:42:58,084 - INFO - Duplicate detected: Sairatna Enterprises (08050798496)
+2026-02-18 00:42:58,085 - INFO - Duplicate detected: Panchal Painting Services (07383676562)
+2026-02-18 00:42:58,085 - INFO - Duplicate detected: Aradhya Enterprises (08401510966)
+2026-02-18 00:42:58,085 - INFO - Duplicate detected: Sunshine Painting Works (09725348473)
+2026-02-18 00:42:58,085 - INFO - Duplicate detected: Jaiswal Contractor (07490975768)
+2026-02-18 00:42:58,086 - INFO - Duplicate detected: Spruhee Painting Contractor (08460409838)
+2026-02-18 00:42:58,086 - INFO - Duplicate detected: Dharamraj Painting Contractor (08460243366)
+2026-02-18 00:42:58,086 - INFO - Duplicate detected: Abhee Decorators (09035094896)
+2026-02-18 00:42:58,086 - INFO - Duplicate detected: Palace Decor (09035770660)
+2026-02-18 00:42:58,087 - INFO - Page 18: Found 20 items, Added 3 new. Total: 131
+2026-02-18 00:42:58,113 - INFO - Standard navigation failed. Attempting forced URL for page 19
+2026-02-18 00:42:58,113 - INFO - Force navigating to: https://www.justdial.com/Pune/painter/page-19
+2026-02-18 00:43:04,614 - INFO - Scraping page 19 (Total collected: 131/150)
+2026-02-18 00:43:04,614 - INFO - Aggressive scrolling started... Aiming for ~150 items loaded in DOM
+2026-02-18 00:43:06,702 - INFO - Scroll iteration 0/30...
+2026-02-18 00:43:12,963 - INFO - Scroll stuck or reached bottom.
+2026-02-18 00:43:13,593 - INFO - Duplicate detected: Akshay Painting Service (08460224709)
+2026-02-18 00:43:13,593 - INFO - Duplicate detected: S V Contractor (09035158179)
+2026-02-18 00:43:13,593 - INFO - Duplicate detected: Colour Key Home Solution (09035198457)
+2026-02-18 00:43:13,594 - INFO - Duplicate detected: Jaiswal Contractor (07490975768)
+2026-02-18 00:43:13,594 - INFO - Duplicate detected: Kansai Nerolac Paints Limited (08971650772)
+2026-02-18 00:43:13,594 - INFO - Duplicate detected: Ask Painters (08460426325)
+2026-02-18 00:43:13,595 - INFO - Duplicate detected: Professsional Painting Services (09035256230)
+2026-02-18 00:43:13,595 - INFO - Duplicate detected: Rushabh Enterprises (07411650714)
+2026-02-18 00:43:13,595 - INFO - Duplicate detected: Palace Decor (08147661394)
+2026-02-18 00:43:13,595 - INFO - Duplicate detected: Arcedge Associates (07411653350)
+2026-02-18 00:43:13,596 - INFO - Duplicate detected: Swara Enterprises (08460260421)
+2026-02-18 00:43:13,596 - INFO - Duplicate detected: The POP Studio (08460302049)
+2026-02-18 00:43:13,596 - INFO - Duplicate detected: Mauli Enterprises (09845476099)
+2026-02-18 00:43:13,597 - INFO - Duplicate detected: Vastutech Enterprises (07801966731)
+2026-02-18 00:43:13,597 - INFO - Duplicate detected: B K Enterprises (09035196869)
+2026-02-18 00:43:13,597 - INFO - Page 19: Found 20 items, Added 5 new. Total: 136
+2026-02-18 00:43:13,626 - INFO - Standard navigation failed. Attempting forced URL for page 20
+2026-02-18 00:43:13,627 - INFO - Force navigating to: https://www.justdial.com/Pune/painter/page-20
+2026-02-18 00:43:14,555 - INFO - Saved 136 records to C:\Users\Nayan\OneDrive\Documents\scrapper\output\leads_data.csv
+2026-02-18 00:43:15,421 - CRITICAL - Fatal error: Browser.close: Connection closed while reading from the driver
+Traceback (most recent call last):
+  File "C:\Users\Nayan\OneDrive\Documents\scrapper\main.py", line 30, in main
+    asyncio.run(scraper.run())
+    ~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Users\Nayan\AppData\Local\Programs\Python\Python314\Lib\asyncio\runners.py", line 204, in run
+    return runner.run(main)
+           ~~~~~~~~~~^^^^^^
+  File "C:\Users\Nayan\AppData\Local\Programs\Python\Python314\Lib\asyncio\runners.py", line 127, in run
+    return self._loop.run_until_complete(task)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\Nayan\AppData\Local\Programs\Python\Python314\Lib\asyncio\base_events.py", line 719, in run_until_complete
+    return future.result()
+           ~~~~~~~~~~~~~^^
+  File "C:\Users\Nayan\OneDrive\Documents\scrapper\src\scraper.py", line 184, in run
+    await browser.close()
+  File "C:\Users\Nayan\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\async_api\_generated.py", line 14322, in close
+    return mapping.from_maybe_impl(await self._impl_obj.close(reason=reason))
+                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Nayan\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_browser.py", line 241, in close
+    raise e
+  File "C:\Users\Nayan\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_browser.py", line 238, in close
+    await self._channel.send("close", None, {"reason": reason})
+  File "C:\Users\Nayan\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_connection.py", line 69, in send
+    return await self._connection.wrap_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "C:\Users\Nayan\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_connection.py", line 559, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+Exception: Browser.close: Connection closed while reading from the driver
+2026-02-18 23:09:35,435 - INFO - Starting Web Scraper for justdial...
+2026-02-18 23:09:35,444 - INFO - Storage initialized at: C:\Users\Nayan\OneDrive\Documents\scrapper\output\lawyer_pune
+2026-02-18 23:09:48,801 - INFO - Navigating to https://www.justdial.com/Pune/lawyer (Platform: justdial)
+2026-02-18 23:09:57,538 - INFO - Scraping page 1 (Total collected: 0/150)
+2026-02-18 23:09:57,625 - INFO - Aggressive scrolling started... Aiming for ~150 items loaded in DOM
+2026-02-18 23:09:59,740 - INFO - Scroll iteration 0/30...
+2026-02-18 23:10:06,056 - INFO - Scroll stuck or reached bottom.
+2026-02-18 23:10:06,763 - INFO - Page 1: Found 20 items, Added 20 new. Total: 20
+2026-02-18 23:10:06,858 - INFO - Standard navigation failed. Attempting forced URL for page 2
+2026-02-18 23:10:06,864 - INFO - Force navigating to: https://www.justdial.com/Pune/lawyer/page-2
+2026-02-18 23:10:12,338 - INFO - Scraping page 2 (Total collected: 20/150)
+2026-02-18 23:10:12,338 - INFO - Aggressive scrolling started... Aiming for ~150 items loaded in DOM
+2026-02-18 23:10:14,388 - INFO - Scroll iteration 0/30...
+2026-02-18 23:10:20,059 - INFO - Saved 20 records to C:\Users\Nayan\OneDrive\Documents\scrapper\output\lawyer_pune\leads_data_20260218_231020.csv
+2026-02-18 23:10:21,109 - CRITICAL - Fatal error: Browser.close: Connection closed while reading from the driver
+Traceback (most recent call last):
+  File "C:\Users\Nayan\OneDrive\Documents\scrapper\main.py", line 30, in main
+    asyncio.run(scraper.run())
+    ~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Users\Nayan\AppData\Local\Programs\Python\Python314\Lib\asyncio\runners.py", line 204, in run
+    return runner.run(main)
+           ~~~~~~~~~~^^^^^^
+  File "C:\Users\Nayan\AppData\Local\Programs\Python\Python314\Lib\asyncio\runners.py", line 127, in run
+    return self._loop.run_until_complete(task)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\Nayan\AppData\Local\Programs\Python\Python314\Lib\asyncio\base_events.py", line 719, in run_until_complete
+    return future.result()
+           ~~~~~~~~~~~~~^^
+  File "C:\Users\Nayan\OneDrive\Documents\scrapper\src\scraper.py", line 193, in run
+    await browser.close()
+  File "C:\Users\Nayan\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\async_api\_generated.py", line 14322, in close
+    return mapping.from_maybe_impl(await self._impl_obj.close(reason=reason))
+                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Nayan\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_browser.py", line 241, in close
+    raise e
+  File "C:\Users\Nayan\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_browser.py", line 238, in close
+    await self._channel.send("close", None, {"reason": reason})
+  File "C:\Users\Nayan\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_connection.py", line 69, in send
+    return await self._connection.wrap_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "C:\Users\Nayan\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_connection.py", line 559, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+Exception: Browser.close: Connection closed while reading from the driver
+2026-02-18 23:10:37,735 - INFO - Starting Web Scraper for justdial...
+2026-02-18 23:10:37,736 - INFO - Storage initialized at: C:\Users\Nayan\OneDrive\Documents\scrapper\output\pandit_mumbai
+2026-02-18 23:10:40,421 - INFO - Navigating to https://www.justdial.com/mumbai/pandit (Platform: justdial)
+2026-02-18 23:10:50,334 - INFO - Scraping page 1 (Total collected: 0/150)
+2026-02-18 23:10:50,337 - INFO - Aggressive scrolling started... Aiming for ~150 items loaded in DOM
+2026-02-18 23:10:53,026 - INFO - Scroll iteration 0/30...
+2026-02-18 23:10:59,413 - INFO - Scroll stuck or reached bottom.
+2026-02-18 23:11:00,536 - INFO - Page 1: Found 20 items, Added 20 new. Total: 20
+2026-02-18 23:11:00,575 - INFO - Standard navigation failed. Attempting forced URL for page 2
+2026-02-18 23:11:00,575 - INFO - Force navigating to: https://www.justdial.com/mumbai/pandit/page-2
+2026-02-18 23:11:07,970 - INFO - Scraping page 2 (Total collected: 20/150)
+2026-02-18 23:11:07,971 - INFO - Aggressive scrolling started... Aiming for ~150 items loaded in DOM
+2026-02-18 23:11:11,113 - INFO - Scroll iteration 0/30...
+2026-02-18 23:11:17,550 - INFO - Scroll stuck or reached bottom.
+2026-02-18 23:11:18,439 - INFO - Duplicate detected: Ashish Kumar Dubey (09845436409)
+2026-02-18 23:11:18,440 - INFO - Duplicate detected: Pandit Tiwariji (08401987303)
+2026-02-18 23:11:18,441 - INFO - Duplicate detected: Kulkarni Guruji Dharmik Vidhi Kendra (09845239795)
+2026-02-18 23:11:18,441 - INFO - Duplicate detected: Pandit Santosh Tiwari (08123851922)
+2026-02-18 23:11:18,442 - INFO - Duplicate detected: Pandit Trilok Sharma (Pandit) (08105565655)
+2026-02-18 23:11:18,442 - INFO - Duplicate detected: Yogesh Joshi (Pandit) (08488893921)
+2026-02-18 23:11:18,442 - INFO - Duplicate detected: Kulkarni Guruji Dharmik Vidhi Kendra (09054491024)
+2026-02-18 23:11:18,443 - INFO - Duplicate detected: Vaidik Puja Sanshthan (08904229346)
+2026-02-18 23:11:18,443 - INFO - Page 2: Found 20 items, Added 12 new. Total: 32
+2026-02-18 23:11:18,464 - INFO - Standard navigation failed. Attempting forced URL for page 3
+2026-02-18 23:11:18,464 - INFO - Force navigating to: https://www.justdial.com/mumbai/pandit/page-3
+2026-02-18 23:11:18,919 - INFO - Saved 32 records to C:\Users\Nayan\OneDrive\Documents\scrapper\output\pandit_mumbai\leads_data_20260218_231118.csv
+2026-02-18 23:11:19,840 - CRITICAL - Fatal error: Browser.close: Connection closed while reading from the driver
+Traceback (most recent call last):
+  File "C:\Users\Nayan\OneDrive\Documents\scrapper\main.py", line 30, in main
+    asyncio.run(scraper.run())
+    ~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Users\Nayan\AppData\Local\Programs\Python\Python314\Lib\asyncio\runners.py", line 204, in run
+    return runner.run(main)
+           ~~~~~~~~~~^^^^^^
+  File "C:\Users\Nayan\AppData\Local\Programs\Python\Python314\Lib\asyncio\runners.py", line 127, in run
+    return self._loop.run_until_complete(task)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\Nayan\AppData\Local\Programs\Python\Python314\Lib\asyncio\base_events.py", line 719, in run_until_complete
+    return future.result()
+           ~~~~~~~~~~~~~^^
+  File "C:\Users\Nayan\OneDrive\Documents\scrapper\src\scraper.py", line 193, in run
+    await browser.close()
+  File "C:\Users\Nayan\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\async_api\_generated.py", line 14322, in close
+    return mapping.from_maybe_impl(await self._impl_obj.close(reason=reason))
+                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Nayan\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_browser.py", line 241, in close
+    raise e
+  File "C:\Users\Nayan\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_browser.py", line 238, in close
+    await self._channel.send("close", None, {"reason": reason})
+  File "C:\Users\Nayan\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_connection.py", line 69, in send
+    return await self._connection.wrap_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "C:\Users\Nayan\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_connection.py", line 559, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+Exception: Browser.close: Connection closed while reading from the driver

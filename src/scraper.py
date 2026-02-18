@@ -11,8 +11,17 @@ import random
 
 class ScraperEngine:
     def __init__(self, platform='custom', location=None, query=None):
+        # Construct search term for dynamic folder naming
+        search_term = "custom_run"
+        if query and location:
+            search_term = f"{query}_{location}"
+        elif query:
+            search_term = query
+        elif platform != 'custom':
+            search_term = platform
+
         self.pipeline = DataPipeline()
-        self.storage = StorageManager()
+        self.storage = StorageManager(search_term=search_term)
         self.platform = platform
         
         if platform == 'custom':
@@ -140,7 +149,7 @@ class ScraperEngine:
                         # DATA DUMP FOR DEBUGGING IF STUCK
                         if new_items_count == 0:
                             logger.warning(f"Page {current_page} yielded 0 items. Dumping HTML for inspection.")
-                            debug_file = config.output_dir / f"debug_page_{current_page}.html"
+                            debug_file = self.storage.output_dir / f"debug_page_{current_page}.html"
                             with open(debug_file, "w", encoding="utf-8") as f:
                                 f.write(content)
                         
